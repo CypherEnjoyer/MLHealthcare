@@ -1,0 +1,1643 @@
+[2025-01-28 02:42:59] local.ERROR: cURL error 28: Resolving timed out after 10009 milliseconds (see https://curl.haxx.se/libcurl/c/libcurl-errors.html) for https://api.example.com/diagnose {"exception":"[object] (Illuminate\\Http\\Client\\ConnectionException(code: 0): cURL error 28: Resolving timed out after 10009 milliseconds (see https://curl.haxx.se/libcurl/c/libcurl-errors.html) for https://api.example.com/diagnose at C:\\Users\\Balagsa\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Client\\PendingRequest.php:941)
+[stacktrace]
+#0 C:\\Users\\Balagsa\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\helpers.php(338): Illuminate\\Http\\Client\\PendingRequest->Illuminate\\Http\\Client\\{closure}(1)
+#1 C:\\Users\\Balagsa\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Client\\PendingRequest.php(905): retry(0, Object(Closure), 100, Object(Closure))
+#2 C:\\Users\\Balagsa\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Client\\PendingRequest.php(804): Illuminate\\Http\\Client\\PendingRequest->send('POST', 'https://api.exa...', Array)
+#3 C:\\Users\\Balagsa\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Client\\Factory.php(510): Illuminate\\Http\\Client\\PendingRequest->post('https://api.exa...', Array)
+#4 C:\\Users\\Balagsa\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Facades\\Facade.php(361): Illuminate\\Http\\Client\\Factory->__call('post', Array)
+#5 C:\\Users\\Balagsa\\SDSCapstone\\app\\Http\\Controllers\\DiagnosisController.php(20): Illuminate\\Support\\Facades\\Facade::__callStatic('post', Array)
+#6 C:\\Users\\Balagsa\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\ControllerDispatcher.php(47): App\\Http\\Controllers\\DiagnosisController->diagnose(Object(Illuminate\\Http\\Request))
+#7 C:\\Users\\Balagsa\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(266): Illuminate\\Routing\\ControllerDispatcher->dispatch(Object(Illuminate\\Routing\\Route), Object(App\\Http\\Controllers\\DiagnosisController), 'diagnose')
+#8 C:\\Users\\Balagsa\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(212): Illuminate\\Routing\\Route->runController()
+#9 C:\\Users\\Balagsa\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(808): Illuminate\\Routing\\Route->run()
+#10 C:\\Users\\Balagsa\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(170): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#11 C:\\Users\\Balagsa\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php(51): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#12 C:\\Users\\Balagsa\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#13 C:\\Users\\Balagsa\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken.php(88): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#14 C:\\Users\\Balagsa\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#15 C:\\Users\\Balagsa\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Middleware\\ShareErrorsFromSession.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#16 C:\\Users\\Balagsa\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\View\\Middleware\\ShareErrorsFromSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#17 C:\\Users\\Balagsa\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Session\\Middleware\\StartSession.php(121): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#18 C:\\Users\\Balagsa\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Session\\Middleware\\StartSession.php(64): Illuminate\\Session\\Middleware\\StartSession->handleStatefulRequest(Object(Illuminate\\Http\\Request), Object(Illuminate\\Session\\Store), Object(Closure))
+#19 C:\\Users\\Balagsa\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Session\\Middleware\\StartSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#20 C:\\Users\\Balagsa\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse.php(37): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#21 C:\\Users\\Balagsa\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#22 C:\\Users\\Balagsa\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\EncryptCookies.php(75): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#23 C:\\Users\\Balagsa\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Cookie\\Middleware\\EncryptCookies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#24 C:\\Users\\Balagsa\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(127): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#25 C:\\Users\\Balagsa\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(807): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#26 C:\\Users\\Balagsa\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(786): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#27 C:\\Users\\Balagsa\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(750): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#28 C:\\Users\\Balagsa\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(739): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#29 C:\\Users\\Balagsa\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(201): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#30 C:\\Users\\Balagsa\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(170): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#31 C:\\Users\\Balagsa\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#32 C:\\Users\\Balagsa\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#33 C:\\Users\\Balagsa\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#34 C:\\Users\\Balagsa\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#35 C:\\Users\\Balagsa\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TrimStrings.php(51): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#36 C:\\Users\\Balagsa\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#37 C:\\Users\\Balagsa\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#38 C:\\Users\\Balagsa\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#39 C:\\Users\\Balagsa\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance.php(110): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#40 C:\\Users\\Balagsa\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#41 C:\\Users\\Balagsa\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\HandleCors.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#42 C:\\Users\\Balagsa\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Http\\Middleware\\HandleCors->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#43 C:\\Users\\Balagsa\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\TrustProxies.php(58): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#44 C:\\Users\\Balagsa\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Http\\Middleware\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#45 C:\\Users\\Balagsa\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\InvokeDeferredCallbacks.php(22): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#46 C:\\Users\\Balagsa\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Foundation\\Http\\Middleware\\InvokeDeferredCallbacks->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#47 C:\\Users\\Balagsa\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(127): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#48 C:\\Users\\Balagsa\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(176): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#49 C:\\Users\\Balagsa\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(145): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#50 C:\\Users\\Balagsa\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1193): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#51 C:\\Users\\Balagsa\\SDSCapstone\\public\\index.php(17): Illuminate\\Foundation\\Application->handleRequest(Object(Illuminate\\Http\\Request))
+#52 C:\\Users\\Balagsa\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(23): require_once('C:\\\\Users\\\\Balags...')
+#53 {main}
+
+[previous exception] [object] (GuzzleHttp\\Exception\\ConnectException(code: 0): cURL error 28: Resolving timed out after 10009 milliseconds (see https://curl.haxx.se/libcurl/c/libcurl-errors.html) for https://api.example.com/diagnose at C:\\Users\\Balagsa\\SDSCapstone\\vendor\\guzzlehttp\\guzzle\\src\\Handler\\CurlFactory.php:275)
+[stacktrace]
+#0 C:\\Users\\Balagsa\\SDSCapstone\\vendor\\guzzlehttp\\guzzle\\src\\Handler\\CurlFactory.php(205): GuzzleHttp\\Handler\\CurlFactory::createRejection(Object(GuzzleHttp\\Handler\\EasyHandle), Array)
+#1 C:\\Users\\Balagsa\\SDSCapstone\\vendor\\guzzlehttp\\guzzle\\src\\Handler\\CurlFactory.php(157): GuzzleHttp\\Handler\\CurlFactory::finishError(Object(GuzzleHttp\\Handler\\CurlHandler), Object(GuzzleHttp\\Handler\\EasyHandle), Object(GuzzleHttp\\Handler\\CurlFactory))
+#2 C:\\Users\\Balagsa\\SDSCapstone\\vendor\\guzzlehttp\\guzzle\\src\\Handler\\CurlHandler.php(47): GuzzleHttp\\Handler\\CurlFactory::finish(Object(GuzzleHttp\\Handler\\CurlHandler), Object(GuzzleHttp\\Handler\\EasyHandle), Object(GuzzleHttp\\Handler\\CurlFactory))
+#3 C:\\Users\\Balagsa\\SDSCapstone\\vendor\\guzzlehttp\\guzzle\\src\\Handler\\Proxy.php(28): GuzzleHttp\\Handler\\CurlHandler->__invoke(Object(GuzzleHttp\\Psr7\\Request), Array)
+#4 C:\\Users\\Balagsa\\SDSCapstone\\vendor\\guzzlehttp\\guzzle\\src\\Handler\\Proxy.php(48): GuzzleHttp\\Handler\\Proxy::GuzzleHttp\\Handler\\{closure}(Object(GuzzleHttp\\Psr7\\Request), Array)
+#5 C:\\Users\\Balagsa\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Client\\PendingRequest.php(1339): GuzzleHttp\\Handler\\Proxy::GuzzleHttp\\Handler\\{closure}(Object(GuzzleHttp\\Psr7\\Request), Array)
+#6 C:\\Users\\Balagsa\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Client\\PendingRequest.php(1305): Illuminate\\Http\\Client\\PendingRequest->Illuminate\\Http\\Client\\{closure}(Object(GuzzleHttp\\Psr7\\Request), Array)
+#7 C:\\Users\\Balagsa\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Client\\PendingRequest.php(1291): Illuminate\\Http\\Client\\PendingRequest->Illuminate\\Http\\Client\\{closure}(Object(GuzzleHttp\\Psr7\\Request), Array)
+#8 C:\\Users\\Balagsa\\SDSCapstone\\vendor\\guzzlehttp\\guzzle\\src\\PrepareBodyMiddleware.php(64): Illuminate\\Http\\Client\\PendingRequest->Illuminate\\Http\\Client\\{closure}(Object(GuzzleHttp\\Psr7\\Request), Array)
+#9 C:\\Users\\Balagsa\\SDSCapstone\\vendor\\guzzlehttp\\guzzle\\src\\Middleware.php(38): GuzzleHttp\\PrepareBodyMiddleware->__invoke(Object(GuzzleHttp\\Psr7\\Request), Array)
+#10 C:\\Users\\Balagsa\\SDSCapstone\\vendor\\guzzlehttp\\guzzle\\src\\RedirectMiddleware.php(71): GuzzleHttp\\Middleware::GuzzleHttp\\{closure}(Object(GuzzleHttp\\Psr7\\Request), Array)
+#11 C:\\Users\\Balagsa\\SDSCapstone\\vendor\\guzzlehttp\\guzzle\\src\\Middleware.php(63): GuzzleHttp\\RedirectMiddleware->__invoke(Object(GuzzleHttp\\Psr7\\Request), Array)
+#12 C:\\Users\\Balagsa\\SDSCapstone\\vendor\\guzzlehttp\\guzzle\\src\\HandlerStack.php(75): GuzzleHttp\\Middleware::GuzzleHttp\\{closure}(Object(GuzzleHttp\\Psr7\\Request), Array)
+#13 C:\\Users\\Balagsa\\SDSCapstone\\vendor\\guzzlehttp\\guzzle\\src\\Client.php(333): GuzzleHttp\\HandlerStack->__invoke(Object(GuzzleHttp\\Psr7\\Request), Array)
+#14 C:\\Users\\Balagsa\\SDSCapstone\\vendor\\guzzlehttp\\guzzle\\src\\Client.php(169): GuzzleHttp\\Client->transfer(Object(GuzzleHttp\\Psr7\\Request), Array)
+#15 C:\\Users\\Balagsa\\SDSCapstone\\vendor\\guzzlehttp\\guzzle\\src\\Client.php(189): GuzzleHttp\\Client->requestAsync('POST', Object(GuzzleHttp\\Psr7\\Uri), Array)
+#16 C:\\Users\\Balagsa\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Client\\PendingRequest.php(1137): GuzzleHttp\\Client->request('POST', 'https://api.exa...', Array)
+#17 C:\\Users\\Balagsa\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Client\\PendingRequest.php(907): Illuminate\\Http\\Client\\PendingRequest->sendRequest('POST', 'https://api.exa...', Array)
+#18 C:\\Users\\Balagsa\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\helpers.php(338): Illuminate\\Http\\Client\\PendingRequest->Illuminate\\Http\\Client\\{closure}(1)
+#19 C:\\Users\\Balagsa\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Client\\PendingRequest.php(905): retry(0, Object(Closure), 100, Object(Closure))
+#20 C:\\Users\\Balagsa\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Client\\PendingRequest.php(804): Illuminate\\Http\\Client\\PendingRequest->send('POST', 'https://api.exa...', Array)
+#21 C:\\Users\\Balagsa\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Client\\Factory.php(510): Illuminate\\Http\\Client\\PendingRequest->post('https://api.exa...', Array)
+#22 C:\\Users\\Balagsa\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Facades\\Facade.php(361): Illuminate\\Http\\Client\\Factory->__call('post', Array)
+#23 C:\\Users\\Balagsa\\SDSCapstone\\app\\Http\\Controllers\\DiagnosisController.php(20): Illuminate\\Support\\Facades\\Facade::__callStatic('post', Array)
+#24 C:\\Users\\Balagsa\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\ControllerDispatcher.php(47): App\\Http\\Controllers\\DiagnosisController->diagnose(Object(Illuminate\\Http\\Request))
+#25 C:\\Users\\Balagsa\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(266): Illuminate\\Routing\\ControllerDispatcher->dispatch(Object(Illuminate\\Routing\\Route), Object(App\\Http\\Controllers\\DiagnosisController), 'diagnose')
+#26 C:\\Users\\Balagsa\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(212): Illuminate\\Routing\\Route->runController()
+#27 C:\\Users\\Balagsa\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(808): Illuminate\\Routing\\Route->run()
+#28 C:\\Users\\Balagsa\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(170): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#29 C:\\Users\\Balagsa\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php(51): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#30 C:\\Users\\Balagsa\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#31 C:\\Users\\Balagsa\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken.php(88): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#32 C:\\Users\\Balagsa\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#33 C:\\Users\\Balagsa\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Middleware\\ShareErrorsFromSession.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#34 C:\\Users\\Balagsa\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\View\\Middleware\\ShareErrorsFromSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#35 C:\\Users\\Balagsa\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Session\\Middleware\\StartSession.php(121): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#36 C:\\Users\\Balagsa\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Session\\Middleware\\StartSession.php(64): Illuminate\\Session\\Middleware\\StartSession->handleStatefulRequest(Object(Illuminate\\Http\\Request), Object(Illuminate\\Session\\Store), Object(Closure))
+#37 C:\\Users\\Balagsa\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Session\\Middleware\\StartSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#38 C:\\Users\\Balagsa\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse.php(37): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#39 C:\\Users\\Balagsa\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#40 C:\\Users\\Balagsa\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\EncryptCookies.php(75): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#41 C:\\Users\\Balagsa\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Cookie\\Middleware\\EncryptCookies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#42 C:\\Users\\Balagsa\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(127): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#43 C:\\Users\\Balagsa\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(807): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#44 C:\\Users\\Balagsa\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(786): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#45 C:\\Users\\Balagsa\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(750): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#46 C:\\Users\\Balagsa\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(739): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#47 C:\\Users\\Balagsa\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(201): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#48 C:\\Users\\Balagsa\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(170): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#49 C:\\Users\\Balagsa\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#50 C:\\Users\\Balagsa\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#51 C:\\Users\\Balagsa\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#52 C:\\Users\\Balagsa\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#53 C:\\Users\\Balagsa\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TrimStrings.php(51): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#54 C:\\Users\\Balagsa\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#55 C:\\Users\\Balagsa\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#56 C:\\Users\\Balagsa\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#57 C:\\Users\\Balagsa\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance.php(110): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#58 C:\\Users\\Balagsa\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#59 C:\\Users\\Balagsa\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\HandleCors.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#60 C:\\Users\\Balagsa\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Http\\Middleware\\HandleCors->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#61 C:\\Users\\Balagsa\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\TrustProxies.php(58): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#62 C:\\Users\\Balagsa\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Http\\Middleware\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#63 C:\\Users\\Balagsa\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\InvokeDeferredCallbacks.php(22): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#64 C:\\Users\\Balagsa\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Foundation\\Http\\Middleware\\InvokeDeferredCallbacks->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#65 C:\\Users\\Balagsa\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(127): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#66 C:\\Users\\Balagsa\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(176): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#67 C:\\Users\\Balagsa\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(145): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#68 C:\\Users\\Balagsa\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1193): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#69 C:\\Users\\Balagsa\\SDSCapstone\\public\\index.php(17): Illuminate\\Foundation\\Application->handleRequest(Object(Illuminate\\Http\\Request))
+#70 C:\\Users\\Balagsa\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(23): require_once('C:\\\\Users\\\\Balags...')
+#71 {main}
+"} 
+[2025-01-28 03:38:05] local.ERROR: Trying to access array offset on value of type null {"exception":"[object] (ErrorException(code: 0): Trying to access array offset on value of type null at C:\\Users\\Balagsa\\SDSCapstone\\app\\Http\\Controllers\\DiagnosisController.php:29)
+[stacktrace]
+#0 C:\\Users\\Balagsa\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\HandleExceptions.php(290): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(2, 'Trying to acces...', 'C:\\\\Users\\\\Balags...', 29)
+#1 C:\\Users\\Balagsa\\SDSCapstone\\app\\Http\\Controllers\\DiagnosisController.php(29): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->Illuminate\\Foundation\\Bootstrap\\{closure}(2, 'Trying to acces...', 'C:\\\\Users\\\\Balags...', 29)
+#2 C:\\Users\\Balagsa\\SDSCapstone\\app\\Http\\Controllers\\DiagnosisController.php(18): App\\Http\\Controllers\\DiagnosisController->getDiagnosis('coughs and cold...')
+#3 C:\\Users\\Balagsa\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\ControllerDispatcher.php(47): App\\Http\\Controllers\\DiagnosisController->diagnose(Object(Illuminate\\Http\\Request))
+#4 C:\\Users\\Balagsa\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(266): Illuminate\\Routing\\ControllerDispatcher->dispatch(Object(Illuminate\\Routing\\Route), Object(App\\Http\\Controllers\\DiagnosisController), 'diagnose')
+#5 C:\\Users\\Balagsa\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(212): Illuminate\\Routing\\Route->runController()
+#6 C:\\Users\\Balagsa\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(808): Illuminate\\Routing\\Route->run()
+#7 C:\\Users\\Balagsa\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(170): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#8 C:\\Users\\Balagsa\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php(51): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#9 C:\\Users\\Balagsa\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#10 C:\\Users\\Balagsa\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken.php(88): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#11 C:\\Users\\Balagsa\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#12 C:\\Users\\Balagsa\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Middleware\\ShareErrorsFromSession.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#13 C:\\Users\\Balagsa\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\View\\Middleware\\ShareErrorsFromSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#14 C:\\Users\\Balagsa\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Session\\Middleware\\StartSession.php(121): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#15 C:\\Users\\Balagsa\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Session\\Middleware\\StartSession.php(64): Illuminate\\Session\\Middleware\\StartSession->handleStatefulRequest(Object(Illuminate\\Http\\Request), Object(Illuminate\\Session\\Store), Object(Closure))
+#16 C:\\Users\\Balagsa\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Session\\Middleware\\StartSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#17 C:\\Users\\Balagsa\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse.php(37): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#18 C:\\Users\\Balagsa\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#19 C:\\Users\\Balagsa\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\EncryptCookies.php(75): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#20 C:\\Users\\Balagsa\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Cookie\\Middleware\\EncryptCookies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#21 C:\\Users\\Balagsa\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(127): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#22 C:\\Users\\Balagsa\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(807): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#23 C:\\Users\\Balagsa\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(786): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#24 C:\\Users\\Balagsa\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(750): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#25 C:\\Users\\Balagsa\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(739): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#26 C:\\Users\\Balagsa\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(201): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#27 C:\\Users\\Balagsa\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(170): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#28 C:\\Users\\Balagsa\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#29 C:\\Users\\Balagsa\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#30 C:\\Users\\Balagsa\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#31 C:\\Users\\Balagsa\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#32 C:\\Users\\Balagsa\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TrimStrings.php(51): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#33 C:\\Users\\Balagsa\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#34 C:\\Users\\Balagsa\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#35 C:\\Users\\Balagsa\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#36 C:\\Users\\Balagsa\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance.php(110): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#37 C:\\Users\\Balagsa\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#38 C:\\Users\\Balagsa\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\HandleCors.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#39 C:\\Users\\Balagsa\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Http\\Middleware\\HandleCors->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#40 C:\\Users\\Balagsa\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\TrustProxies.php(58): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#41 C:\\Users\\Balagsa\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Http\\Middleware\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#42 C:\\Users\\Balagsa\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\InvokeDeferredCallbacks.php(22): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#43 C:\\Users\\Balagsa\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Foundation\\Http\\Middleware\\InvokeDeferredCallbacks->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#44 C:\\Users\\Balagsa\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(127): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#45 C:\\Users\\Balagsa\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(176): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#46 C:\\Users\\Balagsa\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(145): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#47 C:\\Users\\Balagsa\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1193): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#48 C:\\Users\\Balagsa\\SDSCapstone\\public\\index.php(17): Illuminate\\Foundation\\Application->handleRequest(Object(Illuminate\\Http\\Request))
+#49 C:\\Users\\Balagsa\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(23): require_once('C:\\\\Users\\\\Balags...')
+#50 {main}
+"} 
+[2025-01-28 03:40:30] local.ERROR: API request failed {"response":"<!doctype html>
+<html lang=en>
+  <head>
+    <title>ValueError: could not convert string to float: &#39;cough and cold&#39;
+ // Werkzeug Debugger</title>
+    <link rel=\"stylesheet\" href=\"?__debugger__=yes&amp;cmd=resource&amp;f=style.css\">
+    <link rel=\"shortcut icon\"
+        href=\"?__debugger__=yes&amp;cmd=resource&amp;f=console.png\">
+    <script src=\"?__debugger__=yes&amp;cmd=resource&amp;f=debugger.js\"></script>
+    <script>
+      var CONSOLE_MODE = false,
+          EVALEX = true,
+          EVALEX_TRUSTED = false,
+          SECRET = \"GXYcYPO9QQnKxHjIsKVP\";
+    </script>
+  </head>
+  <body style=\"background-color: #fff\">
+    <div class=\"debugger\">
+<h1>ValueError</h1>
+<div class=\"detail\">
+  <p class=\"errormsg\">ValueError: could not convert string to float: &#39;cough and cold&#39;
+</p>
+</div>
+<h2 class=\"traceback\">Traceback <em>(most recent call last)</em></h2>
+<div class=\"traceback\">
+  <h3></h3>
+  <ul><li><div class=\"frame\" id=\"frame-3092883377024\">
+  <h4>File <cite class=\"filename\">\"c:\\Users\\Balagsa\\ml_backend\\venv\\Lib\\site-packages\\flask\\app.py\"</cite>,
+      line <em class=\"line\">1536</em>,
+      in <code class=\"function\">__call__</code></h4>
+  <div class=\"source library\"><pre class=\"line before\"><span class=\"ws\">    </span>) -&gt; cabc.Iterable[bytes]:</pre>
+<pre class=\"line before\"><span class=\"ws\">        </span>&#34;&#34;&#34;The WSGI server calls the Flask application object as the</pre>
+<pre class=\"line before\"><span class=\"ws\">        </span>WSGI application. This calls :meth:`wsgi_app`, which can be</pre>
+<pre class=\"line before\"><span class=\"ws\">        </span>wrapped to apply middleware.</pre>
+<pre class=\"line before\"><span class=\"ws\">        </span>&#34;&#34;&#34;</pre>
+<pre class=\"line current\"><span class=\"ws\">        </span>return self.wsgi_app(environ, start_response)
+<span class=\"ws\">        </span>       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^</pre></div>
+</div>
+
+<li><div class=\"frame\" id=\"frame-3092883377600\">
+  <h4>File <cite class=\"filename\">\"c:\\Users\\Balagsa\\ml_backend\\venv\\Lib\\site-packages\\flask\\app.py\"</cite>,
+      line <em class=\"line\">1514</em>,
+      in <code class=\"function\">wsgi_app</code></h4>
+  <div class=\"source library\"><pre class=\"line before\"><span class=\"ws\">            </span>try:</pre>
+<pre class=\"line before\"><span class=\"ws\">                </span>ctx.push()</pre>
+<pre class=\"line before\"><span class=\"ws\">                </span>response = self.full_dispatch_request()</pre>
+<pre class=\"line before\"><span class=\"ws\">            </span>except Exception as e:</pre>
+<pre class=\"line before\"><span class=\"ws\">                </span>error = e</pre>
+<pre class=\"line current\"><span class=\"ws\">                </span>response = self.handle_exception(e)
+<span class=\"ws\">                </span>           ^^^^^^^^^^^^^^^^^^^^^^^^</pre>
+<pre class=\"line after\"><span class=\"ws\">            </span>except:  # noqa: B001</pre>
+<pre class=\"line after\"><span class=\"ws\">                </span>error = sys.exc_info()[1]</pre>
+<pre class=\"line after\"><span class=\"ws\">                </span>raise</pre>
+<pre class=\"line after\"><span class=\"ws\">            </span>return response(environ, start_response)</pre>
+<pre class=\"line after\"><span class=\"ws\">        </span>finally:</pre></div>
+</div>
+
+<li><div class=\"frame\" id=\"frame-3092883377312\">
+  <h4>File <cite class=\"filename\">\"c:\\Users\\Balagsa\\ml_backend\\venv\\Lib\\site-packages\\flask\\app.py\"</cite>,
+      line <em class=\"line\">1511</em>,
+      in <code class=\"function\">wsgi_app</code></h4>
+  <div class=\"source library\"><pre class=\"line before\"><span class=\"ws\">        </span>ctx = self.request_context(environ)</pre>
+<pre class=\"line before\"><span class=\"ws\">        </span>error: BaseException | None = None</pre>
+<pre class=\"line before\"><span class=\"ws\">        </span>try:</pre>
+<pre class=\"line before\"><span class=\"ws\">            </span>try:</pre>
+<pre class=\"line before\"><span class=\"ws\">                </span>ctx.push()</pre>
+<pre class=\"line current\"><span class=\"ws\">                </span>response = self.full_dispatch_request()
+<span class=\"ws\">                </span>           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^</pre>
+<pre class=\"line after\"><span class=\"ws\">            </span>except Exception as e:</pre>
+<pre class=\"line after\"><span class=\"ws\">                </span>error = e</pre>
+<pre class=\"line after\"><span class=\"ws\">                </span>response = self.handle_exception(e)</pre>
+<pre class=\"line after\"><span class=\"ws\">            </span>except:  # noqa: B001</pre>
+<pre class=\"line after\"><span class=\"ws\">                </span>error = sys.exc_info()[1]</pre></div>
+</div>
+
+<li><div class=\"frame\" id=\"frame-3092883377456\">
+  <h4>File <cite class=\"filename\">\"c:\\Users\\Balagsa\\ml_backend\\venv\\Lib\\site-packages\\flask\\app.py\"</cite>,
+      line <em class=\"line\">919</em>,
+      in <code class=\"function\">full_dispatch_request</code></h4>
+  <div class=\"source library\"><pre class=\"line before\"><span class=\"ws\">            </span>request_started.send(self, _async_wrapper=self.ensure_sync)</pre>
+<pre class=\"line before\"><span class=\"ws\">            </span>rv = self.preprocess_request()</pre>
+<pre class=\"line before\"><span class=\"ws\">            </span>if rv is None:</pre>
+<pre class=\"line before\"><span class=\"ws\">                </span>rv = self.dispatch_request()</pre>
+<pre class=\"line before\"><span class=\"ws\">        </span>except Exception as e:</pre>
+<pre class=\"line current\"><span class=\"ws\">            </span>rv = self.handle_user_exception(e)
+<span class=\"ws\">            </span>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^</pre>
+<pre class=\"line after\"><span class=\"ws\">        </span>return self.finalize_request(rv)</pre>
+<pre class=\"line after\"><span class=\"ws\"></span> </pre>
+<pre class=\"line after\"><span class=\"ws\">    </span>def finalize_request(</pre>
+<pre class=\"line after\"><span class=\"ws\">        </span>self,</pre>
+<pre class=\"line after\"><span class=\"ws\">        </span>rv: ft.ResponseReturnValue | HTTPException,</pre></div>
+</div>
+
+<li><div class=\"frame\" id=\"frame-3092883377744\">
+  <h4>File <cite class=\"filename\">\"c:\\Users\\Balagsa\\ml_backend\\venv\\Lib\\site-packages\\flask\\app.py\"</cite>,
+      line <em class=\"line\">917</em>,
+      in <code class=\"function\">full_dispatch_request</code></h4>
+  <div class=\"source library\"><pre class=\"line before\"><span class=\"ws\"></span> </pre>
+<pre class=\"line before\"><span class=\"ws\">        </span>try:</pre>
+<pre class=\"line before\"><span class=\"ws\">            </span>request_started.send(self, _async_wrapper=self.ensure_sync)</pre>
+<pre class=\"line before\"><span class=\"ws\">            </span>rv = self.preprocess_request()</pre>
+<pre class=\"line before\"><span class=\"ws\">            </span>if rv is None:</pre>
+<pre class=\"line current\"><span class=\"ws\">                </span>rv = self.dispatch_request()
+<span class=\"ws\">                </span>     ^^^^^^^^^^^^^^^^^^^^^^^</pre>
+<pre class=\"line after\"><span class=\"ws\">        </span>except Exception as e:</pre>
+<pre class=\"line after\"><span class=\"ws\">            </span>rv = self.handle_user_exception(e)</pre>
+<pre class=\"line after\"><span class=\"ws\">        </span>return self.finalize_request(rv)</pre>
+<pre class=\"line after\"><span class=\"ws\"></span> </pre>
+<pre class=\"line after\"><span class=\"ws\">    </span>def finalize_request(</pre></div>
+</div>
+
+<li><div class=\"frame\" id=\"frame-3092883377168\">
+  <h4>File <cite class=\"filename\">\"c:\\Users\\Balagsa\\ml_backend\\venv\\Lib\\site-packages\\flask\\app.py\"</cite>,
+      line <em class=\"line\">902</em>,
+      in <code class=\"function\">dispatch_request</code></h4>
+  <div class=\"source library\"><pre class=\"line before\"><span class=\"ws\">            </span>and req.method == &#34;OPTIONS&#34;</pre>
+<pre class=\"line before\"><span class=\"ws\">        </span>):</pre>
+<pre class=\"line before\"><span class=\"ws\">            </span>return self.make_default_options_response()</pre>
+<pre class=\"line before\"><span class=\"ws\">        </span># otherwise dispatch to the handler for that endpoint</pre>
+<pre class=\"line before\"><span class=\"ws\">        </span>view_args: dict[str, t.Any] = req.view_args  # type: ignore[assignment]</pre>
+<pre class=\"line current\"><span class=\"ws\">        </span>return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+<span class=\"ws\">        </span>       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^</pre>
+<pre class=\"line after\"><span class=\"ws\"></span> </pre>
+<pre class=\"line after\"><span class=\"ws\">    </span>def full_dispatch_request(self) -&gt; Response:</pre>
+<pre class=\"line after\"><span class=\"ws\">        </span>&#34;&#34;&#34;Dispatches the request and on top of that performs request</pre>
+<pre class=\"line after\"><span class=\"ws\">        </span>pre and postprocessing as well as HTTP exception catching and</pre>
+<pre class=\"line after\"><span class=\"ws\">        </span>error handling.</pre></div>
+</div>
+
+<li><div class=\"frame\" id=\"frame-3092883376880\">
+  <h4>File <cite class=\"filename\">\"C:\\Users\\Balagsa\\ml_backend\\app.py\"</cite>,
+      line <em class=\"line\">15</em>,
+      in <code class=\"function\">diagnose</code></h4>
+  <div class=\"source \"><pre class=\"line before\"><span class=\"ws\"></span>@app.route(&#39;/diagnose&#39;, methods=[&#39;POST&#39;])</pre>
+<pre class=\"line before\"><span class=\"ws\"></span>def diagnose():</pre>
+<pre class=\"line before\"><span class=\"ws\">    </span>data = request.json</pre>
+<pre class=\"line before\"><span class=\"ws\">    </span>symptoms = data[&#39;symptoms&#39;]</pre>
+<pre class=\"line before\"><span class=\"ws\">    </span># Preprocess symptoms and predict (this is a placeholder)</pre>
+<pre class=\"line current\"><span class=\"ws\">    </span>prediction = model.predict([symptoms])
+<span class=\"ws\">    </span>             ^^^^^^^^^^^^^^^^^^^^^^^^^</pre>
+<pre class=\"line after\"><span class=\"ws\">    </span>return jsonify({&#39;diagnosis&#39;: prediction[0]})</pre>
+<pre class=\"line after\"><span class=\"ws\"></span> </pre>
+<pre class=\"line after\"><span class=\"ws\"></span>if __name__ == &#39;__main__&#39;:</pre>
+<pre class=\"line after\"><span class=\"ws\">    </span>app.run(debug=True)</pre></div>
+</div>
+
+<li><div class=\"frame\" id=\"frame-3092883377888\">
+  <h4>File <cite class=\"filename\">\"c:\\Users\\Balagsa\\ml_backend\\venv\\Lib\\site-packages\\sklearn\\ensemble\\_forest.py\"</cite>,
+      line <em class=\"line\">904</em>,
+      in <code class=\"function\">predict</code></h4>
+  <div class=\"source library\"><pre class=\"line before\"><span class=\"ws\">        </span>Returns</pre>
+<pre class=\"line before\"><span class=\"ws\">        </span>-------</pre>
+<pre class=\"line before\"><span class=\"ws\">        </span>y : ndarray of shape (n_samples,) or (n_samples, n_outputs)</pre>
+<pre class=\"line before\"><span class=\"ws\">            </span>The predicted classes.</pre>
+<pre class=\"line before\"><span class=\"ws\">        </span>&#34;&#34;&#34;</pre>
+<pre class=\"line current\"><span class=\"ws\">        </span>proba = self.predict_proba(X)
+<span class=\"ws\">        </span>        ^^^^^^^^^^^^^^^^^^^^^</pre>
+<pre class=\"line after\"><span class=\"ws\"></span> </pre>
+<pre class=\"line after\"><span class=\"ws\">        </span>if self.n_outputs_ == 1:</pre>
+<pre class=\"line after\"><span class=\"ws\">            </span>return self.classes_.take(np.argmax(proba, axis=1), axis=0)</pre>
+<pre class=\"line after\"><span class=\"ws\"></span> </pre>
+<pre class=\"line after\"><span class=\"ws\">        </span>else:</pre></div>
+</div>
+
+<li><div class=\"frame\" id=\"frame-3092883378032\">
+  <h4>File <cite class=\"filename\">\"c:\\Users\\Balagsa\\ml_backend\\venv\\Lib\\site-packages\\sklearn\\ensemble\\_forest.py\"</cite>,
+      line <em class=\"line\">946</em>,
+      in <code class=\"function\">predict_proba</code></h4>
+  <div class=\"source library\"><pre class=\"line before\"><span class=\"ws\">            </span>The class probabilities of the input samples. The order of the</pre>
+<pre class=\"line before\"><span class=\"ws\">            </span>classes corresponds to that in the attribute :term:`classes_`.</pre>
+<pre class=\"line before\"><span class=\"ws\">        </span>&#34;&#34;&#34;</pre>
+<pre class=\"line before\"><span class=\"ws\">        </span>check_is_fitted(self)</pre>
+<pre class=\"line before\"><span class=\"ws\">        </span># Check data</pre>
+<pre class=\"line current\"><span class=\"ws\">        </span>X = self._validate_X_predict(X)
+<span class=\"ws\">        </span>    ^^^^^^^^^^^^^^^^^^^^^^^^^^^</pre>
+<pre class=\"line after\"><span class=\"ws\"></span> </pre>
+<pre class=\"line after\"><span class=\"ws\">        </span># Assign chunk of trees to jobs</pre>
+<pre class=\"line after\"><span class=\"ws\">        </span>n_jobs, _, _ = _partition_estimators(self.n_estimators, self.n_jobs)</pre>
+<pre class=\"line after\"><span class=\"ws\"></span> </pre>
+<pre class=\"line after\"><span class=\"ws\">        </span># avoid storing the output of every estimator by summing them here</pre></div>
+</div>
+
+<li><div class=\"frame\" id=\"frame-3092883378176\">
+  <h4>File <cite class=\"filename\">\"c:\\Users\\Balagsa\\ml_backend\\venv\\Lib\\site-packages\\sklearn\\ensemble\\_forest.py\"</cite>,
+      line <em class=\"line\">638</em>,
+      in <code class=\"function\">_validate_X_predict</code></h4>
+  <div class=\"source library\"><pre class=\"line before\"><span class=\"ws\">        </span>if self.estimators_[0]._support_missing_values(X):</pre>
+<pre class=\"line before\"><span class=\"ws\">            </span>ensure_all_finite = &#34;allow-nan&#34;</pre>
+<pre class=\"line before\"><span class=\"ws\">        </span>else:</pre>
+<pre class=\"line before\"><span class=\"ws\">            </span>ensure_all_finite = True</pre>
+<pre class=\"line before\"><span class=\"ws\"></span> </pre>
+<pre class=\"line current\"><span class=\"ws\">        </span>X = validate_data(
+<span class=\"ws\">        </span>    </pre>
+<pre class=\"line after\"><span class=\"ws\">            </span>self,</pre>
+<pre class=\"line after\"><span class=\"ws\">            </span>X,</pre>
+<pre class=\"line after\"><span class=\"ws\">            </span>dtype=DTYPE,</pre>
+<pre class=\"line after\"><span class=\"ws\">            </span>accept_sparse=&#34;csr&#34;,</pre>
+<pre class=\"line after\"><span class=\"ws\">            </span>reset=False,</pre></div>
+</div>
+
+<li><div class=\"frame\" id=\"frame-3092883378320\">
+  <h4>File <cite class=\"filename\">\"c:\\Users\\Balagsa\\ml_backend\\venv\\Lib\\site-packages\\sklearn\\utils\\validation.py\"</cite>,
+      line <em class=\"line\">2944</em>,
+      in <code class=\"function\">validate_data</code></h4>
+  <div class=\"source library\"><pre class=\"line before\"><span class=\"ws\">        </span>elif no_val_X and not no_val_y:</pre>
+<pre class=\"line before\"><span class=\"ws\">            </span>out = y</pre>
+<pre class=\"line before\"><span class=\"ws\">        </span>else:</pre>
+<pre class=\"line before\"><span class=\"ws\">            </span>out = X, y</pre>
+<pre class=\"line before\"><span class=\"ws\">    </span>elif not no_val_X and no_val_y:</pre>
+<pre class=\"line current\"><span class=\"ws\">        </span>out = check_array(X, input_name=&#34;X&#34;, **check_params)
+<span class=\"ws\">        </span>      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^</pre>
+<pre class=\"line after\"><span class=\"ws\">    </span>elif no_val_X and not no_val_y:</pre>
+<pre class=\"line after\"><span class=\"ws\">        </span>out = _check_y(y, **check_params)</pre>
+<pre class=\"line after\"><span class=\"ws\">    </span>else:</pre>
+<pre class=\"line after\"><span class=\"ws\">        </span>if validate_separately:</pre>
+<pre class=\"line after\"><span class=\"ws\">            </span># We need this because some estimators validate X and y</pre></div>
+</div>
+
+<li><div class=\"frame\" id=\"frame-3092883378464\">
+  <h4>File <cite class=\"filename\">\"c:\\Users\\Balagsa\\ml_backend\\venv\\Lib\\site-packages\\sklearn\\utils\\validation.py\"</cite>,
+      line <em class=\"line\">1055</em>,
+      in <code class=\"function\">check_array</code></h4>
+  <div class=\"source library\"><pre class=\"line before\"><span class=\"ws\">                            </span>estimator_name=estimator_name,</pre>
+<pre class=\"line before\"><span class=\"ws\">                            </span>input_name=input_name,</pre>
+<pre class=\"line before\"><span class=\"ws\">                        </span>)</pre>
+<pre class=\"line before\"><span class=\"ws\">                    </span>array = xp.astype(array, dtype, copy=False)</pre>
+<pre class=\"line before\"><span class=\"ws\">                </span>else:</pre>
+<pre class=\"line current\"><span class=\"ws\">                    </span>array = _asarray_with_order(array, order=order, dtype=dtype, xp=xp)
+<span class=\"ws\">                    </span>        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^</pre>
+<pre class=\"line after\"><span class=\"ws\">            </span>except ComplexWarning as complex_warning:</pre>
+<pre class=\"line after\"><span class=\"ws\">                </span>raise ValueError(</pre>
+<pre class=\"line after\"><span class=\"ws\">                    </span>&#34;Complex data not supported\\n{}\\n&#34;.format(array)</pre>
+<pre class=\"line after\"><span class=\"ws\">                </span>) from complex_warning</pre>
+<pre class=\"line after\"><span class=\"ws\"></span> </pre></div>
+</div>
+
+<li><div class=\"frame\" id=\"frame-3092883378752\">
+  <h4>File <cite class=\"filename\">\"c:\\Users\\Balagsa\\ml_backend\\venv\\Lib\\site-packages\\sklearn\\utils\\_array_api.py\"</cite>,
+      line <em class=\"line\">839</em>,
+      in <code class=\"function\">_asarray_with_order</code></h4>
+  <div class=\"source library\"><pre class=\"line before\"><span class=\"ws\">    </span>if _is_numpy_namespace(xp):</pre>
+<pre class=\"line before\"><span class=\"ws\">        </span># Use NumPy API to support order</pre>
+<pre class=\"line before\"><span class=\"ws\">        </span>if copy is True:</pre>
+<pre class=\"line before\"><span class=\"ws\">            </span>array = numpy.array(array, order=order, dtype=dtype)</pre>
+<pre class=\"line before\"><span class=\"ws\">        </span>else:</pre>
+<pre class=\"line current\"><span class=\"ws\">            </span>array = numpy.asarray(array, order=order, dtype=dtype)
+<span class=\"ws\">            </span>        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^</pre>
+<pre class=\"line after\"><span class=\"ws\"></span> </pre>
+<pre class=\"line after\"><span class=\"ws\">        </span># At this point array is a NumPy ndarray. We convert it to an array</pre>
+<pre class=\"line after\"><span class=\"ws\">        </span># container that is consistent with the input&#39;s namespace.</pre>
+<pre class=\"line after\"><span class=\"ws\">        </span>return xp.asarray(array)</pre>
+<pre class=\"line after\"><span class=\"ws\">    </span>else:</pre></div>
+</div>
+</ul>
+  <blockquote>ValueError: could not convert string to float: &#39;cough and cold&#39;
+</blockquote>
+</div>
+
+<div class=\"plain\">
+    <p>
+      This is the Copy/Paste friendly version of the traceback.
+    </p>
+    <textarea cols=\"50\" rows=\"10\" name=\"code\" readonly>Traceback (most recent call last):
+  File &#34;c:\\Users\\Balagsa\\ml_backend\\venv\\Lib\\site-packages\\flask\\app.py&#34;, line 1536, in __call__
+    return self.wsgi_app(environ, start_response)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File &#34;c:\\Users\\Balagsa\\ml_backend\\venv\\Lib\\site-packages\\flask\\app.py&#34;, line 1514, in wsgi_app
+    response = self.handle_exception(e)
+  File &#34;c:\\Users\\Balagsa\\ml_backend\\venv\\Lib\\site-packages\\flask\\app.py&#34;, line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File &#34;c:\\Users\\Balagsa\\ml_backend\\venv\\Lib\\site-packages\\flask\\app.py&#34;, line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File &#34;c:\\Users\\Balagsa\\ml_backend\\venv\\Lib\\site-packages\\flask\\app.py&#34;, line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File &#34;c:\\Users\\Balagsa\\ml_backend\\venv\\Lib\\site-packages\\flask\\app.py&#34;, line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File &#34;C:\\Users\\Balagsa\\ml_backend\\app.py&#34;, line 15, in diagnose
+    prediction = model.predict([symptoms])
+  File &#34;c:\\Users\\Balagsa\\ml_backend\\venv\\Lib\\site-packages\\sklearn\\ensemble\\_forest.py&#34;, line 904, in predict
+    proba = self.predict_proba(X)
+  File &#34;c:\\Users\\Balagsa\\ml_backend\\venv\\Lib\\site-packages\\sklearn\\ensemble\\_forest.py&#34;, line 946, in predict_proba
+    X = self._validate_X_predict(X)
+  File &#34;c:\\Users\\Balagsa\\ml_backend\\venv\\Lib\\site-packages\\sklearn\\ensemble\\_forest.py&#34;, line 638, in _validate_X_predict
+    X = validate_data(
+    
+  File &#34;c:\\Users\\Balagsa\\ml_backend\\venv\\Lib\\site-packages\\sklearn\\utils\\validation.py&#34;, line 2944, in validate_data
+    out = check_array(X, input_name=&#34;X&#34;, **check_params)
+  File &#34;c:\\Users\\Balagsa\\ml_backend\\venv\\Lib\\site-packages\\sklearn\\utils\\validation.py&#34;, line 1055, in check_array
+    array = _asarray_with_order(array, order=order, dtype=dtype, xp=xp)
+  File &#34;c:\\Users\\Balagsa\\ml_backend\\venv\\Lib\\site-packages\\sklearn\\utils\\_array_api.py&#34;, line 839, in _asarray_with_order
+    array = numpy.asarray(array, order=order, dtype=dtype)
+ValueError: could not convert string to float: &#39;cough and cold&#39;
+</textarea>
+</div>
+<div class=\"explanation\">
+  The debugger caught an exception in your WSGI application.  You can now
+  look at the traceback which led to the error.  <span class=\"nojavascript\">
+  If you enable JavaScript you can also use additional features such as code
+  execution (if the evalex feature is enabled), automatic pasting of the
+  exceptions and much more.</span>
+</div>
+      <div class=\"footer\">
+        Brought to you by <strong class=\"arthur\">DON'T PANIC</strong>, your
+        friendly Werkzeug powered traceback interpreter.
+      </div>
+    </div>
+
+    <div class=\"pin-prompt\">
+      <div class=\"inner\">
+        <h3>Console Locked</h3>
+        <p>
+          The console is locked and needs to be unlocked by entering the PIN.
+          You can find the PIN printed out on the standard output of your
+          shell that runs the server.
+        <form>
+          <p>PIN:
+            <input type=text name=pin size=14>
+            <input type=submit name=btn value=\"Confirm Pin\">
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
+
+<!--
+
+Traceback (most recent call last):
+  File \"c:\\Users\\Balagsa\\ml_backend\\venv\\Lib\\site-packages\\flask\\app.py\", line 1536, in __call__
+    return self.wsgi_app(environ, start_response)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File \"c:\\Users\\Balagsa\\ml_backend\\venv\\Lib\\site-packages\\flask\\app.py\", line 1514, in wsgi_app
+    response = self.handle_exception(e)
+  File \"c:\\Users\\Balagsa\\ml_backend\\venv\\Lib\\site-packages\\flask\\app.py\", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File \"c:\\Users\\Balagsa\\ml_backend\\venv\\Lib\\site-packages\\flask\\app.py\", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File \"c:\\Users\\Balagsa\\ml_backend\\venv\\Lib\\site-packages\\flask\\app.py\", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File \"c:\\Users\\Balagsa\\ml_backend\\venv\\Lib\\site-packages\\flask\\app.py\", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File \"C:\\Users\\Balagsa\\ml_backend\\app.py\", line 15, in diagnose
+    prediction = model.predict([symptoms])
+  File \"c:\\Users\\Balagsa\\ml_backend\\venv\\Lib\\site-packages\\sklearn\\ensemble\\_forest.py\", line 904, in predict
+    proba = self.predict_proba(X)
+  File \"c:\\Users\\Balagsa\\ml_backend\\venv\\Lib\\site-packages\\sklearn\\ensemble\\_forest.py\", line 946, in predict_proba
+    X = self._validate_X_predict(X)
+  File \"c:\\Users\\Balagsa\\ml_backend\\venv\\Lib\\site-packages\\sklearn\\ensemble\\_forest.py\", line 638, in _validate_X_predict
+    X = validate_data(
+    
+  File \"c:\\Users\\Balagsa\\ml_backend\\venv\\Lib\\site-packages\\sklearn\\utils\\validation.py\", line 2944, in validate_data
+    out = check_array(X, input_name=\"X\", **check_params)
+  File \"c:\\Users\\Balagsa\\ml_backend\\venv\\Lib\\site-packages\\sklearn\\utils\\validation.py\", line 1055, in check_array
+    array = _asarray_with_order(array, order=order, dtype=dtype, xp=xp)
+  File \"c:\\Users\\Balagsa\\ml_backend\\venv\\Lib\\site-packages\\sklearn\\utils\\_array_api.py\", line 839, in _asarray_with_order
+    array = numpy.asarray(array, order=order, dtype=dtype)
+ValueError: could not convert string to float: 'cough and cold'
+
+
+-->
+"} 
+[2025-01-28 03:44:49] local.ERROR: API request failed {"response":"<!doctype html>
+<html lang=en>
+  <head>
+    <title>TypeError: Object of type int32 is not JSON serializable
+ // Werkzeug Debugger</title>
+    <link rel=\"stylesheet\" href=\"?__debugger__=yes&amp;cmd=resource&amp;f=style.css\">
+    <link rel=\"shortcut icon\"
+        href=\"?__debugger__=yes&amp;cmd=resource&amp;f=console.png\">
+    <script src=\"?__debugger__=yes&amp;cmd=resource&amp;f=debugger.js\"></script>
+    <script>
+      var CONSOLE_MODE = false,
+          EVALEX = true,
+          EVALEX_TRUSTED = false,
+          SECRET = \"GSdpiLZToZYi7xuTo5R0\";
+    </script>
+  </head>
+  <body style=\"background-color: #fff\">
+    <div class=\"debugger\">
+<h1>TypeError</h1>
+<div class=\"detail\">
+  <p class=\"errormsg\">TypeError: Object of type int32 is not JSON serializable
+</p>
+</div>
+<h2 class=\"traceback\">Traceback <em>(most recent call last)</em></h2>
+<div class=\"traceback\">
+  <h3></h3>
+  <ul><li><div class=\"frame\" id=\"frame-2379397196688\">
+  <h4>File <cite class=\"filename\">\"c:\\Users\\Balagsa\\ml_backend\\venv\\Lib\\site-packages\\flask\\app.py\"</cite>,
+      line <em class=\"line\">1536</em>,
+      in <code class=\"function\">__call__</code></h4>
+  <div class=\"source library\"><pre class=\"line before\"><span class=\"ws\">    </span>) -&gt; cabc.Iterable[bytes]:</pre>
+<pre class=\"line before\"><span class=\"ws\">        </span>&#34;&#34;&#34;The WSGI server calls the Flask application object as the</pre>
+<pre class=\"line before\"><span class=\"ws\">        </span>WSGI application. This calls :meth:`wsgi_app`, which can be</pre>
+<pre class=\"line before\"><span class=\"ws\">        </span>wrapped to apply middleware.</pre>
+<pre class=\"line before\"><span class=\"ws\">        </span>&#34;&#34;&#34;</pre>
+<pre class=\"line current\"><span class=\"ws\">        </span>return self.wsgi_app(environ, start_response)
+<span class=\"ws\">        </span>       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^</pre></div>
+</div>
+
+<li><div class=\"frame\" id=\"frame-2379397196544\">
+  <h4>File <cite class=\"filename\">\"c:\\Users\\Balagsa\\ml_backend\\venv\\Lib\\site-packages\\flask\\app.py\"</cite>,
+      line <em class=\"line\">1514</em>,
+      in <code class=\"function\">wsgi_app</code></h4>
+  <div class=\"source library\"><pre class=\"line before\"><span class=\"ws\">            </span>try:</pre>
+<pre class=\"line before\"><span class=\"ws\">                </span>ctx.push()</pre>
+<pre class=\"line before\"><span class=\"ws\">                </span>response = self.full_dispatch_request()</pre>
+<pre class=\"line before\"><span class=\"ws\">            </span>except Exception as e:</pre>
+<pre class=\"line before\"><span class=\"ws\">                </span>error = e</pre>
+<pre class=\"line current\"><span class=\"ws\">                </span>response = self.handle_exception(e)
+<span class=\"ws\">                </span>           ^^^^^^^^^^^^^^^^^^^^^^^^</pre>
+<pre class=\"line after\"><span class=\"ws\">            </span>except:  # noqa: B001</pre>
+<pre class=\"line after\"><span class=\"ws\">                </span>error = sys.exc_info()[1]</pre>
+<pre class=\"line after\"><span class=\"ws\">                </span>raise</pre>
+<pre class=\"line after\"><span class=\"ws\">            </span>return response(environ, start_response)</pre>
+<pre class=\"line after\"><span class=\"ws\">        </span>finally:</pre></div>
+</div>
+
+<li><div class=\"frame\" id=\"frame-2379397197264\">
+  <h4>File <cite class=\"filename\">\"c:\\Users\\Balagsa\\ml_backend\\venv\\Lib\\site-packages\\flask\\app.py\"</cite>,
+      line <em class=\"line\">1511</em>,
+      in <code class=\"function\">wsgi_app</code></h4>
+  <div class=\"source library\"><pre class=\"line before\"><span class=\"ws\">        </span>ctx = self.request_context(environ)</pre>
+<pre class=\"line before\"><span class=\"ws\">        </span>error: BaseException | None = None</pre>
+<pre class=\"line before\"><span class=\"ws\">        </span>try:</pre>
+<pre class=\"line before\"><span class=\"ws\">            </span>try:</pre>
+<pre class=\"line before\"><span class=\"ws\">                </span>ctx.push()</pre>
+<pre class=\"line current\"><span class=\"ws\">                </span>response = self.full_dispatch_request()
+<span class=\"ws\">                </span>           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^</pre>
+<pre class=\"line after\"><span class=\"ws\">            </span>except Exception as e:</pre>
+<pre class=\"line after\"><span class=\"ws\">                </span>error = e</pre>
+<pre class=\"line after\"><span class=\"ws\">                </span>response = self.handle_exception(e)</pre>
+<pre class=\"line after\"><span class=\"ws\">            </span>except:  # noqa: B001</pre>
+<pre class=\"line after\"><span class=\"ws\">                </span>error = sys.exc_info()[1]</pre></div>
+</div>
+
+<li><div class=\"frame\" id=\"frame-2379397197696\">
+  <h4>File <cite class=\"filename\">\"c:\\Users\\Balagsa\\ml_backend\\venv\\Lib\\site-packages\\flask\\app.py\"</cite>,
+      line <em class=\"line\">919</em>,
+      in <code class=\"function\">full_dispatch_request</code></h4>
+  <div class=\"source library\"><pre class=\"line before\"><span class=\"ws\">            </span>request_started.send(self, _async_wrapper=self.ensure_sync)</pre>
+<pre class=\"line before\"><span class=\"ws\">            </span>rv = self.preprocess_request()</pre>
+<pre class=\"line before\"><span class=\"ws\">            </span>if rv is None:</pre>
+<pre class=\"line before\"><span class=\"ws\">                </span>rv = self.dispatch_request()</pre>
+<pre class=\"line before\"><span class=\"ws\">        </span>except Exception as e:</pre>
+<pre class=\"line current\"><span class=\"ws\">            </span>rv = self.handle_user_exception(e)
+<span class=\"ws\">            </span>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^</pre>
+<pre class=\"line after\"><span class=\"ws\">        </span>return self.finalize_request(rv)</pre>
+<pre class=\"line after\"><span class=\"ws\"></span> </pre>
+<pre class=\"line after\"><span class=\"ws\">    </span>def finalize_request(</pre>
+<pre class=\"line after\"><span class=\"ws\">        </span>self,</pre>
+<pre class=\"line after\"><span class=\"ws\">        </span>rv: ft.ResponseReturnValue | HTTPException,</pre></div>
+</div>
+
+<li><div class=\"frame\" id=\"frame-2379397197840\">
+  <h4>File <cite class=\"filename\">\"c:\\Users\\Balagsa\\ml_backend\\venv\\Lib\\site-packages\\flask\\app.py\"</cite>,
+      line <em class=\"line\">917</em>,
+      in <code class=\"function\">full_dispatch_request</code></h4>
+  <div class=\"source library\"><pre class=\"line before\"><span class=\"ws\"></span> </pre>
+<pre class=\"line before\"><span class=\"ws\">        </span>try:</pre>
+<pre class=\"line before\"><span class=\"ws\">            </span>request_started.send(self, _async_wrapper=self.ensure_sync)</pre>
+<pre class=\"line before\"><span class=\"ws\">            </span>rv = self.preprocess_request()</pre>
+<pre class=\"line before\"><span class=\"ws\">            </span>if rv is None:</pre>
+<pre class=\"line current\"><span class=\"ws\">                </span>rv = self.dispatch_request()
+<span class=\"ws\">                </span>     ^^^^^^^^^^^^^^^^^^^^^^^</pre>
+<pre class=\"line after\"><span class=\"ws\">        </span>except Exception as e:</pre>
+<pre class=\"line after\"><span class=\"ws\">            </span>rv = self.handle_user_exception(e)</pre>
+<pre class=\"line after\"><span class=\"ws\">        </span>return self.finalize_request(rv)</pre>
+<pre class=\"line after\"><span class=\"ws\"></span> </pre>
+<pre class=\"line after\"><span class=\"ws\">    </span>def finalize_request(</pre></div>
+</div>
+
+<li><div class=\"frame\" id=\"frame-2379397197984\">
+  <h4>File <cite class=\"filename\">\"c:\\Users\\Balagsa\\ml_backend\\venv\\Lib\\site-packages\\flask\\app.py\"</cite>,
+      line <em class=\"line\">902</em>,
+      in <code class=\"function\">dispatch_request</code></h4>
+  <div class=\"source library\"><pre class=\"line before\"><span class=\"ws\">            </span>and req.method == &#34;OPTIONS&#34;</pre>
+<pre class=\"line before\"><span class=\"ws\">        </span>):</pre>
+<pre class=\"line before\"><span class=\"ws\">            </span>return self.make_default_options_response()</pre>
+<pre class=\"line before\"><span class=\"ws\">        </span># otherwise dispatch to the handler for that endpoint</pre>
+<pre class=\"line before\"><span class=\"ws\">        </span>view_args: dict[str, t.Any] = req.view_args  # type: ignore[assignment]</pre>
+<pre class=\"line current\"><span class=\"ws\">        </span>return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+<span class=\"ws\">        </span>       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^</pre>
+<pre class=\"line after\"><span class=\"ws\"></span> </pre>
+<pre class=\"line after\"><span class=\"ws\">    </span>def full_dispatch_request(self) -&gt; Response:</pre>
+<pre class=\"line after\"><span class=\"ws\">        </span>&#34;&#34;&#34;Dispatches the request and on top of that performs request</pre>
+<pre class=\"line after\"><span class=\"ws\">        </span>pre and postprocessing as well as HTTP exception catching and</pre>
+<pre class=\"line after\"><span class=\"ws\">        </span>error handling.</pre></div>
+</div>
+
+<li><div class=\"frame\" id=\"frame-2379397198128\">
+  <h4>File <cite class=\"filename\">\"C:\\Users\\Balagsa\\ml_backend\\app.py\"</cite>,
+      line <em class=\"line\">35</em>,
+      in <code class=\"function\">diagnose</code></h4>
+  <div class=\"source \"><pre class=\"line before\"><span class=\"ws\">    </span>for symptom in symptoms:</pre>
+<pre class=\"line before\"><span class=\"ws\">        </span>if symptom in symptom_mapping:</pre>
+<pre class=\"line before\"><span class=\"ws\">            </span>symptom_vector[symptom_mapping[symptom]] = 1</pre>
+<pre class=\"line before\"><span class=\"ws\">    </span># Predict using the model</pre>
+<pre class=\"line before\"><span class=\"ws\">    </span>prediction = model.predict([symptom_vector])</pre>
+<pre class=\"line current\"><span class=\"ws\">    </span>return jsonify({&#39;diagnosis&#39;: prediction[0]})
+<span class=\"ws\">    </span>       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^</pre>
+<pre class=\"line after\"><span class=\"ws\"></span> </pre>
+<pre class=\"line after\"><span class=\"ws\"></span>if __name__ == &#39;__main__&#39;:</pre>
+<pre class=\"line after\"><span class=\"ws\">    </span>app.run(debug=True)</pre></div>
+</div>
+
+<li><div class=\"frame\" id=\"frame-2379397198272\">
+  <h4>File <cite class=\"filename\">\"c:\\Users\\Balagsa\\ml_backend\\venv\\Lib\\site-packages\\flask\\json\\__init__.py\"</cite>,
+      line <em class=\"line\">170</em>,
+      in <code class=\"function\">jsonify</code></h4>
+  <div class=\"source library\"><pre class=\"line before\"><span class=\"ws\">        </span>Added support for serializing top-level arrays. This was a</pre>
+<pre class=\"line before\"><span class=\"ws\">        </span>security risk in ancient browsers. See :ref:`security-json`.</pre>
+<pre class=\"line before\"><span class=\"ws\"></span> </pre>
+<pre class=\"line before\"><span class=\"ws\">    </span>.. versionadded:: 0.2</pre>
+<pre class=\"line before\"><span class=\"ws\">    </span>&#34;&#34;&#34;</pre>
+<pre class=\"line current\"><span class=\"ws\">    </span>return current_app.json.response(*args, **kwargs)  # type: ignore[return-value]
+<span class=\"ws\">    </span>       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^</pre></div>
+</div>
+
+<li><div class=\"frame\" id=\"frame-2379397198416\">
+  <h4>File <cite class=\"filename\">\"c:\\Users\\Balagsa\\ml_backend\\venv\\Lib\\site-packages\\flask\\json\\provider.py\"</cite>,
+      line <em class=\"line\">214</em>,
+      in <code class=\"function\">response</code></h4>
+  <div class=\"source library\"><pre class=\"line before\"><span class=\"ws\">            </span>dump_args.setdefault(&#34;indent&#34;, 2)</pre>
+<pre class=\"line before\"><span class=\"ws\">        </span>else:</pre>
+<pre class=\"line before\"><span class=\"ws\">            </span>dump_args.setdefault(&#34;separators&#34;, (&#34;,&#34;, &#34;:&#34;))</pre>
+<pre class=\"line before\"><span class=\"ws\"></span> </pre>
+<pre class=\"line before\"><span class=\"ws\">        </span>return self._app.response_class(</pre>
+<pre class=\"line current\"><span class=\"ws\">            </span>f&#34;{self.dumps(obj, **dump_args)}\\n&#34;, mimetype=self.mimetype
+<span class=\"ws\">            </span>   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^</pre>
+<pre class=\"line after\"><span class=\"ws\">        </span>)</pre></div>
+</div>
+
+<li><div class=\"frame\" id=\"frame-2379397198848\">
+  <h4>File <cite class=\"filename\">\"c:\\Users\\Balagsa\\ml_backend\\venv\\Lib\\site-packages\\flask\\json\\provider.py\"</cite>,
+      line <em class=\"line\">179</em>,
+      in <code class=\"function\">dumps</code></h4>
+  <div class=\"source library\"><pre class=\"line before\"><span class=\"ws\">        </span>:param kwargs: Passed to :func:`json.dumps`.</pre>
+<pre class=\"line before\"><span class=\"ws\">        </span>&#34;&#34;&#34;</pre>
+<pre class=\"line before\"><span class=\"ws\">        </span>kwargs.setdefault(&#34;default&#34;, self.default)</pre>
+<pre class=\"line before\"><span class=\"ws\">        </span>kwargs.setdefault(&#34;ensure_ascii&#34;, self.ensure_ascii)</pre>
+<pre class=\"line before\"><span class=\"ws\">        </span>kwargs.setdefault(&#34;sort_keys&#34;, self.sort_keys)</pre>
+<pre class=\"line current\"><span class=\"ws\">        </span>return json.dumps(obj, **kwargs)
+<span class=\"ws\">        </span>       ^^^^^^^^^^^^^^^^^^^^^^^^^</pre>
+<pre class=\"line after\"><span class=\"ws\"></span> </pre>
+<pre class=\"line after\"><span class=\"ws\">    </span>def loads(self, s: str | bytes, **kwargs: t.Any) -&gt; t.Any:</pre>
+<pre class=\"line after\"><span class=\"ws\">        </span>&#34;&#34;&#34;Deserialize data as JSON from a string or bytes.</pre>
+<pre class=\"line after\"><span class=\"ws\"></span> </pre>
+<pre class=\"line after\"><span class=\"ws\">        </span>:param s: Text or UTF-8 bytes.</pre></div>
+</div>
+
+<li><div class=\"frame\" id=\"frame-2379397198992\">
+  <h4>File <cite class=\"filename\">\"C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.13_3.13.496.0_x64__qbz5n2kfra8p0\\Lib\\json\\__init__.py\"</cite>,
+      line <em class=\"line\">238</em>,
+      in <code class=\"function\">dumps</code></h4>
+  <div class=\"source library\"><pre class=\"line before\"><span class=\"ws\">        </span>cls = JSONEncoder</pre>
+<pre class=\"line before\"><span class=\"ws\">    </span>return cls(</pre>
+<pre class=\"line before\"><span class=\"ws\">        </span>skipkeys=skipkeys, ensure_ascii=ensure_ascii,</pre>
+<pre class=\"line before\"><span class=\"ws\">        </span>check_circular=check_circular, allow_nan=allow_nan, indent=indent,</pre>
+<pre class=\"line before\"><span class=\"ws\">        </span>separators=separators, default=default, sort_keys=sort_keys,</pre>
+<pre class=\"line current\"><span class=\"ws\">        </span>**kw).encode(obj)
+<span class=\"ws\">        </span>      ^^^^^^^^^^^</pre>
+<pre class=\"line after\"><span class=\"ws\"></span> </pre>
+<pre class=\"line after\"><span class=\"ws\"></span> </pre>
+<pre class=\"line after\"><span class=\"ws\"></span>_default_decoder = JSONDecoder(object_hook=None, object_pairs_hook=None)</pre>
+<pre class=\"line after\"><span class=\"ws\"></span> </pre>
+<pre class=\"line after\"><span class=\"ws\"></span> </pre></div>
+</div>
+
+<li><div class=\"frame\" id=\"frame-2379397199136\">
+  <h4>File <cite class=\"filename\">\"C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.13_3.13.496.0_x64__qbz5n2kfra8p0\\Lib\\json\\encoder.py\"</cite>,
+      line <em class=\"line\">200</em>,
+      in <code class=\"function\">encode</code></h4>
+  <div class=\"source library\"><pre class=\"line before\"><span class=\"ws\">            </span>else:</pre>
+<pre class=\"line before\"><span class=\"ws\">                </span>return encode_basestring(o)</pre>
+<pre class=\"line before\"><span class=\"ws\">        </span># This doesn&#39;t pass the iterator directly to &#39;&#39;.join() because the</pre>
+<pre class=\"line before\"><span class=\"ws\">        </span># exceptions aren&#39;t as detailed.  The list call should be roughly</pre>
+<pre class=\"line before\"><span class=\"ws\">        </span># equivalent to the PySequence_Fast that &#39;&#39;.join() would do.</pre>
+<pre class=\"line current\"><span class=\"ws\">        </span>chunks = self.iterencode(o, _one_shot=True)
+<span class=\"ws\">        </span>         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^</pre>
+<pre class=\"line after\"><span class=\"ws\">        </span>if not isinstance(chunks, (list, tuple)):</pre>
+<pre class=\"line after\"><span class=\"ws\">            </span>chunks = list(chunks)</pre>
+<pre class=\"line after\"><span class=\"ws\">        </span>return &#39;&#39;.join(chunks)</pre>
+<pre class=\"line after\"><span class=\"ws\"></span> </pre>
+<pre class=\"line after\"><span class=\"ws\">    </span>def iterencode(self, o, _one_shot=False):</pre></div>
+</div>
+
+<li><div class=\"frame\" id=\"frame-2379397199280\">
+  <h4>File <cite class=\"filename\">\"C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.13_3.13.496.0_x64__qbz5n2kfra8p0\\Lib\\json\\encoder.py\"</cite>,
+      line <em class=\"line\">261</em>,
+      in <code class=\"function\">iterencode</code></h4>
+  <div class=\"source library\"><pre class=\"line before\"><span class=\"ws\">        </span>else:</pre>
+<pre class=\"line before\"><span class=\"ws\">            </span>_iterencode = _make_iterencode(</pre>
+<pre class=\"line before\"><span class=\"ws\">                </span>markers, self.default, _encoder, indent, floatstr,</pre>
+<pre class=\"line before\"><span class=\"ws\">                </span>self.key_separator, self.item_separator, self.sort_keys,</pre>
+<pre class=\"line before\"><span class=\"ws\">                </span>self.skipkeys, _one_shot)</pre>
+<pre class=\"line current\"><span class=\"ws\">        </span>return _iterencode(o, 0)
+<span class=\"ws\">        </span>       ^^^^^^^^^^^^^^^^^</pre>
+<pre class=\"line after\"><span class=\"ws\"></span> </pre>
+<pre class=\"line after\"><span class=\"ws\"></span>def _make_iterencode(markers, _default, _encoder, _indent, _floatstr,</pre>
+<pre class=\"line after\"><span class=\"ws\">        </span>_key_separator, _item_separator, _sort_keys, _skipkeys, _one_shot,</pre>
+<pre class=\"line after\"><span class=\"ws\">        </span>## HACK: hand-optimized bytecode; turn globals into locals</pre>
+<pre class=\"line after\"><span class=\"ws\">        </span>ValueError=ValueError,</pre></div>
+</div>
+
+<li><div class=\"frame\" id=\"frame-2379397199424\">
+  <h4>File <cite class=\"filename\">\"c:\\Users\\Balagsa\\ml_backend\\venv\\Lib\\site-packages\\flask\\json\\provider.py\"</cite>,
+      line <em class=\"line\">121</em>,
+      in <code class=\"function\">_default</code></h4>
+  <div class=\"source library\"><pre class=\"line before\"><span class=\"ws\">        </span>return dataclasses.asdict(o)  # type: ignore[arg-type]</pre>
+<pre class=\"line before\"><span class=\"ws\"></span> </pre>
+<pre class=\"line before\"><span class=\"ws\">    </span>if hasattr(o, &#34;__html__&#34;):</pre>
+<pre class=\"line before\"><span class=\"ws\">        </span>return str(o.__html__())</pre>
+<pre class=\"line before\"><span class=\"ws\"></span> </pre>
+<pre class=\"line current\"><span class=\"ws\">    </span>raise TypeError(f&#34;Object of type {type(o).__name__} is not JSON serializable&#34;)
+<span class=\"ws\">    </span>^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^</pre>
+<pre class=\"line after\"><span class=\"ws\"></span> </pre>
+<pre class=\"line after\"><span class=\"ws\"></span> </pre>
+<pre class=\"line after\"><span class=\"ws\"></span>class DefaultJSONProvider(JSONProvider):</pre>
+<pre class=\"line after\"><span class=\"ws\">    </span>&#34;&#34;&#34;Provide JSON operations using Python&#39;s built-in :mod:`json`</pre>
+<pre class=\"line after\"><span class=\"ws\">    </span>library. Serializes the following additional data types:</pre></div>
+</div>
+</ul>
+  <blockquote>TypeError: Object of type int32 is not JSON serializable
+</blockquote>
+</div>
+
+<div class=\"plain\">
+    <p>
+      This is the Copy/Paste friendly version of the traceback.
+    </p>
+    <textarea cols=\"50\" rows=\"10\" name=\"code\" readonly>Traceback (most recent call last):
+  File &#34;c:\\Users\\Balagsa\\ml_backend\\venv\\Lib\\site-packages\\flask\\app.py&#34;, line 1536, in __call__
+    return self.wsgi_app(environ, start_response)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File &#34;c:\\Users\\Balagsa\\ml_backend\\venv\\Lib\\site-packages\\flask\\app.py&#34;, line 1514, in wsgi_app
+    response = self.handle_exception(e)
+  File &#34;c:\\Users\\Balagsa\\ml_backend\\venv\\Lib\\site-packages\\flask\\app.py&#34;, line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File &#34;c:\\Users\\Balagsa\\ml_backend\\venv\\Lib\\site-packages\\flask\\app.py&#34;, line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File &#34;c:\\Users\\Balagsa\\ml_backend\\venv\\Lib\\site-packages\\flask\\app.py&#34;, line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File &#34;c:\\Users\\Balagsa\\ml_backend\\venv\\Lib\\site-packages\\flask\\app.py&#34;, line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File &#34;C:\\Users\\Balagsa\\ml_backend\\app.py&#34;, line 35, in diagnose
+    return jsonify({&#39;diagnosis&#39;: prediction[0]})
+  File &#34;c:\\Users\\Balagsa\\ml_backend\\venv\\Lib\\site-packages\\flask\\json\\__init__.py&#34;, line 170, in jsonify
+    return current_app.json.response(*args, **kwargs)  # type: ignore[return-value]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File &#34;c:\\Users\\Balagsa\\ml_backend\\venv\\Lib\\site-packages\\flask\\json\\provider.py&#34;, line 214, in response
+    f&#34;{self.dumps(obj, **dump_args)}\\n&#34;, mimetype=self.mimetype
+       ~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File &#34;c:\\Users\\Balagsa\\ml_backend\\venv\\Lib\\site-packages\\flask\\json\\provider.py&#34;, line 179, in dumps
+    return json.dumps(obj, **kwargs)
+           ~~~~~~~~~~^^^^^^^^^^^^^^^
+  File &#34;C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.13_3.13.496.0_x64__qbz5n2kfra8p0\\Lib\\json\\__init__.py&#34;, line 238, in dumps
+    **kw).encode(obj)
+          ~~~~~~^^^^^
+  File &#34;C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.13_3.13.496.0_x64__qbz5n2kfra8p0\\Lib\\json\\encoder.py&#34;, line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File &#34;C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.13_3.13.496.0_x64__qbz5n2kfra8p0\\Lib\\json\\encoder.py&#34;, line 261, in iterencode
+    return _iterencode(o, 0)
+  File &#34;c:\\Users\\Balagsa\\ml_backend\\venv\\Lib\\site-packages\\flask\\json\\provider.py&#34;, line 121, in _default
+    raise TypeError(f&#34;Object of type {type(o).__name__} is not JSON serializable&#34;)
+TypeError: Object of type int32 is not JSON serializable
+</textarea>
+</div>
+<div class=\"explanation\">
+  The debugger caught an exception in your WSGI application.  You can now
+  look at the traceback which led to the error.  <span class=\"nojavascript\">
+  If you enable JavaScript you can also use additional features such as code
+  execution (if the evalex feature is enabled), automatic pasting of the
+  exceptions and much more.</span>
+</div>
+      <div class=\"footer\">
+        Brought to you by <strong class=\"arthur\">DON'T PANIC</strong>, your
+        friendly Werkzeug powered traceback interpreter.
+      </div>
+    </div>
+
+    <div class=\"pin-prompt\">
+      <div class=\"inner\">
+        <h3>Console Locked</h3>
+        <p>
+          The console is locked and needs to be unlocked by entering the PIN.
+          You can find the PIN printed out on the standard output of your
+          shell that runs the server.
+        <form>
+          <p>PIN:
+            <input type=text name=pin size=14>
+            <input type=submit name=btn value=\"Confirm Pin\">
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
+
+<!--
+
+Traceback (most recent call last):
+  File \"c:\\Users\\Balagsa\\ml_backend\\venv\\Lib\\site-packages\\flask\\app.py\", line 1536, in __call__
+    return self.wsgi_app(environ, start_response)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File \"c:\\Users\\Balagsa\\ml_backend\\venv\\Lib\\site-packages\\flask\\app.py\", line 1514, in wsgi_app
+    response = self.handle_exception(e)
+  File \"c:\\Users\\Balagsa\\ml_backend\\venv\\Lib\\site-packages\\flask\\app.py\", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File \"c:\\Users\\Balagsa\\ml_backend\\venv\\Lib\\site-packages\\flask\\app.py\", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File \"c:\\Users\\Balagsa\\ml_backend\\venv\\Lib\\site-packages\\flask\\app.py\", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File \"c:\\Users\\Balagsa\\ml_backend\\venv\\Lib\\site-packages\\flask\\app.py\", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File \"C:\\Users\\Balagsa\\ml_backend\\app.py\", line 35, in diagnose
+    return jsonify({'diagnosis': prediction[0]})
+  File \"c:\\Users\\Balagsa\\ml_backend\\venv\\Lib\\site-packages\\flask\\json\\__init__.py\", line 170, in jsonify
+    return current_app.json.response(*args, **kwargs)  # type: ignore[return-value]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File \"c:\\Users\\Balagsa\\ml_backend\\venv\\Lib\\site-packages\\flask\\json\\provider.py\", line 214, in response
+    f\"{self.dumps(obj, **dump_args)}\\n\", mimetype=self.mimetype
+       ~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File \"c:\\Users\\Balagsa\\ml_backend\\venv\\Lib\\site-packages\\flask\\json\\provider.py\", line 179, in dumps
+    return json.dumps(obj, **kwargs)
+           ~~~~~~~~~~^^^^^^^^^^^^^^^
+  File \"C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.13_3.13.496.0_x64__qbz5n2kfra8p0\\Lib\\json\\__init__.py\", line 238, in dumps
+    **kw).encode(obj)
+          ~~~~~~^^^^^
+  File \"C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.13_3.13.496.0_x64__qbz5n2kfra8p0\\Lib\\json\\encoder.py\", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File \"C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.13_3.13.496.0_x64__qbz5n2kfra8p0\\Lib\\json\\encoder.py\", line 261, in iterencode
+    return _iterencode(o, 0)
+  File \"c:\\Users\\Balagsa\\ml_backend\\venv\\Lib\\site-packages\\flask\\json\\provider.py\", line 121, in _default
+    raise TypeError(f\"Object of type {type(o).__name__} is not JSON serializable\")
+TypeError: Object of type int32 is not JSON serializable
+
+
+-->
+"} 
+[2025-01-28 03:48:00] local.ERROR: API request failed {"response":"<!doctype html>
+<html lang=en>
+  <head>
+    <title>TypeError: Object of type int32 is not JSON serializable
+ // Werkzeug Debugger</title>
+    <link rel=\"stylesheet\" href=\"?__debugger__=yes&amp;cmd=resource&amp;f=style.css\">
+    <link rel=\"shortcut icon\"
+        href=\"?__debugger__=yes&amp;cmd=resource&amp;f=console.png\">
+    <script src=\"?__debugger__=yes&amp;cmd=resource&amp;f=debugger.js\"></script>
+    <script>
+      var CONSOLE_MODE = false,
+          EVALEX = true,
+          EVALEX_TRUSTED = false,
+          SECRET = \"Xf1P4SCWvwBMYHVb6b4p\";
+    </script>
+  </head>
+  <body style=\"background-color: #fff\">
+    <div class=\"debugger\">
+<h1>TypeError</h1>
+<div class=\"detail\">
+  <p class=\"errormsg\">TypeError: Object of type int32 is not JSON serializable
+</p>
+</div>
+<h2 class=\"traceback\">Traceback <em>(most recent call last)</em></h2>
+<div class=\"traceback\">
+  <h3></h3>
+  <ul><li><div class=\"frame\" id=\"frame-1939199732624\">
+  <h4>File <cite class=\"filename\">\"c:\\Users\\Balagsa\\ml_backend\\venv\\Lib\\site-packages\\flask\\app.py\"</cite>,
+      line <em class=\"line\">1536</em>,
+      in <code class=\"function\">__call__</code></h4>
+  <div class=\"source library\"><pre class=\"line before\"><span class=\"ws\">    </span>) -&gt; cabc.Iterable[bytes]:</pre>
+<pre class=\"line before\"><span class=\"ws\">        </span>&#34;&#34;&#34;The WSGI server calls the Flask application object as the</pre>
+<pre class=\"line before\"><span class=\"ws\">        </span>WSGI application. This calls :meth:`wsgi_app`, which can be</pre>
+<pre class=\"line before\"><span class=\"ws\">        </span>wrapped to apply middleware.</pre>
+<pre class=\"line before\"><span class=\"ws\">        </span>&#34;&#34;&#34;</pre>
+<pre class=\"line current\"><span class=\"ws\">        </span>return self.wsgi_app(environ, start_response)
+<span class=\"ws\">        </span>       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^</pre></div>
+</div>
+
+<li><div class=\"frame\" id=\"frame-1939199731904\">
+  <h4>File <cite class=\"filename\">\"c:\\Users\\Balagsa\\ml_backend\\venv\\Lib\\site-packages\\flask\\app.py\"</cite>,
+      line <em class=\"line\">1514</em>,
+      in <code class=\"function\">wsgi_app</code></h4>
+  <div class=\"source library\"><pre class=\"line before\"><span class=\"ws\">            </span>try:</pre>
+<pre class=\"line before\"><span class=\"ws\">                </span>ctx.push()</pre>
+<pre class=\"line before\"><span class=\"ws\">                </span>response = self.full_dispatch_request()</pre>
+<pre class=\"line before\"><span class=\"ws\">            </span>except Exception as e:</pre>
+<pre class=\"line before\"><span class=\"ws\">                </span>error = e</pre>
+<pre class=\"line current\"><span class=\"ws\">                </span>response = self.handle_exception(e)
+<span class=\"ws\">                </span>           ^^^^^^^^^^^^^^^^^^^^^^^^</pre>
+<pre class=\"line after\"><span class=\"ws\">            </span>except:  # noqa: B001</pre>
+<pre class=\"line after\"><span class=\"ws\">                </span>error = sys.exc_info()[1]</pre>
+<pre class=\"line after\"><span class=\"ws\">                </span>raise</pre>
+<pre class=\"line after\"><span class=\"ws\">            </span>return response(environ, start_response)</pre>
+<pre class=\"line after\"><span class=\"ws\">        </span>finally:</pre></div>
+</div>
+
+<li><div class=\"frame\" id=\"frame-1939199733200\">
+  <h4>File <cite class=\"filename\">\"c:\\Users\\Balagsa\\ml_backend\\venv\\Lib\\site-packages\\flask\\app.py\"</cite>,
+      line <em class=\"line\">1511</em>,
+      in <code class=\"function\">wsgi_app</code></h4>
+  <div class=\"source library\"><pre class=\"line before\"><span class=\"ws\">        </span>ctx = self.request_context(environ)</pre>
+<pre class=\"line before\"><span class=\"ws\">        </span>error: BaseException | None = None</pre>
+<pre class=\"line before\"><span class=\"ws\">        </span>try:</pre>
+<pre class=\"line before\"><span class=\"ws\">            </span>try:</pre>
+<pre class=\"line before\"><span class=\"ws\">                </span>ctx.push()</pre>
+<pre class=\"line current\"><span class=\"ws\">                </span>response = self.full_dispatch_request()
+<span class=\"ws\">                </span>           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^</pre>
+<pre class=\"line after\"><span class=\"ws\">            </span>except Exception as e:</pre>
+<pre class=\"line after\"><span class=\"ws\">                </span>error = e</pre>
+<pre class=\"line after\"><span class=\"ws\">                </span>response = self.handle_exception(e)</pre>
+<pre class=\"line after\"><span class=\"ws\">            </span>except:  # noqa: B001</pre>
+<pre class=\"line after\"><span class=\"ws\">                </span>error = sys.exc_info()[1]</pre></div>
+</div>
+
+<li><div class=\"frame\" id=\"frame-1939199733632\">
+  <h4>File <cite class=\"filename\">\"c:\\Users\\Balagsa\\ml_backend\\venv\\Lib\\site-packages\\flask\\app.py\"</cite>,
+      line <em class=\"line\">919</em>,
+      in <code class=\"function\">full_dispatch_request</code></h4>
+  <div class=\"source library\"><pre class=\"line before\"><span class=\"ws\">            </span>request_started.send(self, _async_wrapper=self.ensure_sync)</pre>
+<pre class=\"line before\"><span class=\"ws\">            </span>rv = self.preprocess_request()</pre>
+<pre class=\"line before\"><span class=\"ws\">            </span>if rv is None:</pre>
+<pre class=\"line before\"><span class=\"ws\">                </span>rv = self.dispatch_request()</pre>
+<pre class=\"line before\"><span class=\"ws\">        </span>except Exception as e:</pre>
+<pre class=\"line current\"><span class=\"ws\">            </span>rv = self.handle_user_exception(e)
+<span class=\"ws\">            </span>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^</pre>
+<pre class=\"line after\"><span class=\"ws\">        </span>return self.finalize_request(rv)</pre>
+<pre class=\"line after\"><span class=\"ws\"></span> </pre>
+<pre class=\"line after\"><span class=\"ws\">    </span>def finalize_request(</pre>
+<pre class=\"line after\"><span class=\"ws\">        </span>self,</pre>
+<pre class=\"line after\"><span class=\"ws\">        </span>rv: ft.ResponseReturnValue | HTTPException,</pre></div>
+</div>
+
+<li><div class=\"frame\" id=\"frame-1939199733776\">
+  <h4>File <cite class=\"filename\">\"c:\\Users\\Balagsa\\ml_backend\\venv\\Lib\\site-packages\\flask\\app.py\"</cite>,
+      line <em class=\"line\">917</em>,
+      in <code class=\"function\">full_dispatch_request</code></h4>
+  <div class=\"source library\"><pre class=\"line before\"><span class=\"ws\"></span> </pre>
+<pre class=\"line before\"><span class=\"ws\">        </span>try:</pre>
+<pre class=\"line before\"><span class=\"ws\">            </span>request_started.send(self, _async_wrapper=self.ensure_sync)</pre>
+<pre class=\"line before\"><span class=\"ws\">            </span>rv = self.preprocess_request()</pre>
+<pre class=\"line before\"><span class=\"ws\">            </span>if rv is None:</pre>
+<pre class=\"line current\"><span class=\"ws\">                </span>rv = self.dispatch_request()
+<span class=\"ws\">                </span>     ^^^^^^^^^^^^^^^^^^^^^^^</pre>
+<pre class=\"line after\"><span class=\"ws\">        </span>except Exception as e:</pre>
+<pre class=\"line after\"><span class=\"ws\">            </span>rv = self.handle_user_exception(e)</pre>
+<pre class=\"line after\"><span class=\"ws\">        </span>return self.finalize_request(rv)</pre>
+<pre class=\"line after\"><span class=\"ws\"></span> </pre>
+<pre class=\"line after\"><span class=\"ws\">    </span>def finalize_request(</pre></div>
+</div>
+
+<li><div class=\"frame\" id=\"frame-1939199733920\">
+  <h4>File <cite class=\"filename\">\"c:\\Users\\Balagsa\\ml_backend\\venv\\Lib\\site-packages\\flask\\app.py\"</cite>,
+      line <em class=\"line\">902</em>,
+      in <code class=\"function\">dispatch_request</code></h4>
+  <div class=\"source library\"><pre class=\"line before\"><span class=\"ws\">            </span>and req.method == &#34;OPTIONS&#34;</pre>
+<pre class=\"line before\"><span class=\"ws\">        </span>):</pre>
+<pre class=\"line before\"><span class=\"ws\">            </span>return self.make_default_options_response()</pre>
+<pre class=\"line before\"><span class=\"ws\">        </span># otherwise dispatch to the handler for that endpoint</pre>
+<pre class=\"line before\"><span class=\"ws\">        </span>view_args: dict[str, t.Any] = req.view_args  # type: ignore[assignment]</pre>
+<pre class=\"line current\"><span class=\"ws\">        </span>return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+<span class=\"ws\">        </span>       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^</pre>
+<pre class=\"line after\"><span class=\"ws\"></span> </pre>
+<pre class=\"line after\"><span class=\"ws\">    </span>def full_dispatch_request(self) -&gt; Response:</pre>
+<pre class=\"line after\"><span class=\"ws\">        </span>&#34;&#34;&#34;Dispatches the request and on top of that performs request</pre>
+<pre class=\"line after\"><span class=\"ws\">        </span>pre and postprocessing as well as HTTP exception catching and</pre>
+<pre class=\"line after\"><span class=\"ws\">        </span>error handling.</pre></div>
+</div>
+
+<li><div class=\"frame\" id=\"frame-1939199734064\">
+  <h4>File <cite class=\"filename\">\"C:\\Users\\Balagsa\\ml_backend\\app.py\"</cite>,
+      line <em class=\"line\">35</em>,
+      in <code class=\"function\">diagnose</code></h4>
+  <div class=\"source \"><pre class=\"line before\"><span class=\"ws\">    </span>for symptom in symptoms:</pre>
+<pre class=\"line before\"><span class=\"ws\">        </span>if symptom in symptom_mapping:</pre>
+<pre class=\"line before\"><span class=\"ws\">            </span>symptom_vector[symptom_mapping[symptom]] = 1</pre>
+<pre class=\"line before\"><span class=\"ws\">    </span># Predict using the model</pre>
+<pre class=\"line before\"><span class=\"ws\">    </span>prediction = model.predict([symptom_vector])</pre>
+<pre class=\"line current\"><span class=\"ws\">    </span>return jsonify({&#39;diagnosis&#39;: prediction[0]})
+<span class=\"ws\">    </span>       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^</pre>
+<pre class=\"line after\"><span class=\"ws\"></span> </pre>
+<pre class=\"line after\"><span class=\"ws\"></span>if __name__ == &#39;__main__&#39;:</pre>
+<pre class=\"line after\"><span class=\"ws\">    </span>app.run(debug=True)</pre></div>
+</div>
+
+<li><div class=\"frame\" id=\"frame-1939199734208\">
+  <h4>File <cite class=\"filename\">\"c:\\Users\\Balagsa\\ml_backend\\venv\\Lib\\site-packages\\flask\\json\\__init__.py\"</cite>,
+      line <em class=\"line\">170</em>,
+      in <code class=\"function\">jsonify</code></h4>
+  <div class=\"source library\"><pre class=\"line before\"><span class=\"ws\">        </span>Added support for serializing top-level arrays. This was a</pre>
+<pre class=\"line before\"><span class=\"ws\">        </span>security risk in ancient browsers. See :ref:`security-json`.</pre>
+<pre class=\"line before\"><span class=\"ws\"></span> </pre>
+<pre class=\"line before\"><span class=\"ws\">    </span>.. versionadded:: 0.2</pre>
+<pre class=\"line before\"><span class=\"ws\">    </span>&#34;&#34;&#34;</pre>
+<pre class=\"line current\"><span class=\"ws\">    </span>return current_app.json.response(*args, **kwargs)  # type: ignore[return-value]
+<span class=\"ws\">    </span>       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^</pre></div>
+</div>
+
+<li><div class=\"frame\" id=\"frame-1939199734352\">
+  <h4>File <cite class=\"filename\">\"c:\\Users\\Balagsa\\ml_backend\\venv\\Lib\\site-packages\\flask\\json\\provider.py\"</cite>,
+      line <em class=\"line\">214</em>,
+      in <code class=\"function\">response</code></h4>
+  <div class=\"source library\"><pre class=\"line before\"><span class=\"ws\">            </span>dump_args.setdefault(&#34;indent&#34;, 2)</pre>
+<pre class=\"line before\"><span class=\"ws\">        </span>else:</pre>
+<pre class=\"line before\"><span class=\"ws\">            </span>dump_args.setdefault(&#34;separators&#34;, (&#34;,&#34;, &#34;:&#34;))</pre>
+<pre class=\"line before\"><span class=\"ws\"></span> </pre>
+<pre class=\"line before\"><span class=\"ws\">        </span>return self._app.response_class(</pre>
+<pre class=\"line current\"><span class=\"ws\">            </span>f&#34;{self.dumps(obj, **dump_args)}\\n&#34;, mimetype=self.mimetype
+<span class=\"ws\">            </span>   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^</pre>
+<pre class=\"line after\"><span class=\"ws\">        </span>)</pre></div>
+</div>
+
+<li><div class=\"frame\" id=\"frame-1939199734784\">
+  <h4>File <cite class=\"filename\">\"c:\\Users\\Balagsa\\ml_backend\\venv\\Lib\\site-packages\\flask\\json\\provider.py\"</cite>,
+      line <em class=\"line\">179</em>,
+      in <code class=\"function\">dumps</code></h4>
+  <div class=\"source library\"><pre class=\"line before\"><span class=\"ws\">        </span>:param kwargs: Passed to :func:`json.dumps`.</pre>
+<pre class=\"line before\"><span class=\"ws\">        </span>&#34;&#34;&#34;</pre>
+<pre class=\"line before\"><span class=\"ws\">        </span>kwargs.setdefault(&#34;default&#34;, self.default)</pre>
+<pre class=\"line before\"><span class=\"ws\">        </span>kwargs.setdefault(&#34;ensure_ascii&#34;, self.ensure_ascii)</pre>
+<pre class=\"line before\"><span class=\"ws\">        </span>kwargs.setdefault(&#34;sort_keys&#34;, self.sort_keys)</pre>
+<pre class=\"line current\"><span class=\"ws\">        </span>return json.dumps(obj, **kwargs)
+<span class=\"ws\">        </span>       ^^^^^^^^^^^^^^^^^^^^^^^^^</pre>
+<pre class=\"line after\"><span class=\"ws\"></span> </pre>
+<pre class=\"line after\"><span class=\"ws\">    </span>def loads(self, s: str | bytes, **kwargs: t.Any) -&gt; t.Any:</pre>
+<pre class=\"line after\"><span class=\"ws\">        </span>&#34;&#34;&#34;Deserialize data as JSON from a string or bytes.</pre>
+<pre class=\"line after\"><span class=\"ws\"></span> </pre>
+<pre class=\"line after\"><span class=\"ws\">        </span>:param s: Text or UTF-8 bytes.</pre></div>
+</div>
+
+<li><div class=\"frame\" id=\"frame-1939199734928\">
+  <h4>File <cite class=\"filename\">\"C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.13_3.13.496.0_x64__qbz5n2kfra8p0\\Lib\\json\\__init__.py\"</cite>,
+      line <em class=\"line\">238</em>,
+      in <code class=\"function\">dumps</code></h4>
+  <div class=\"source library\"><pre class=\"line before\"><span class=\"ws\">        </span>cls = JSONEncoder</pre>
+<pre class=\"line before\"><span class=\"ws\">    </span>return cls(</pre>
+<pre class=\"line before\"><span class=\"ws\">        </span>skipkeys=skipkeys, ensure_ascii=ensure_ascii,</pre>
+<pre class=\"line before\"><span class=\"ws\">        </span>check_circular=check_circular, allow_nan=allow_nan, indent=indent,</pre>
+<pre class=\"line before\"><span class=\"ws\">        </span>separators=separators, default=default, sort_keys=sort_keys,</pre>
+<pre class=\"line current\"><span class=\"ws\">        </span>**kw).encode(obj)
+<span class=\"ws\">        </span>      ^^^^^^^^^^^</pre>
+<pre class=\"line after\"><span class=\"ws\"></span> </pre>
+<pre class=\"line after\"><span class=\"ws\"></span> </pre>
+<pre class=\"line after\"><span class=\"ws\"></span>_default_decoder = JSONDecoder(object_hook=None, object_pairs_hook=None)</pre>
+<pre class=\"line after\"><span class=\"ws\"></span> </pre>
+<pre class=\"line after\"><span class=\"ws\"></span> </pre></div>
+</div>
+
+<li><div class=\"frame\" id=\"frame-1939199735072\">
+  <h4>File <cite class=\"filename\">\"C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.13_3.13.496.0_x64__qbz5n2kfra8p0\\Lib\\json\\encoder.py\"</cite>,
+      line <em class=\"line\">200</em>,
+      in <code class=\"function\">encode</code></h4>
+  <div class=\"source library\"><pre class=\"line before\"><span class=\"ws\">            </span>else:</pre>
+<pre class=\"line before\"><span class=\"ws\">                </span>return encode_basestring(o)</pre>
+<pre class=\"line before\"><span class=\"ws\">        </span># This doesn&#39;t pass the iterator directly to &#39;&#39;.join() because the</pre>
+<pre class=\"line before\"><span class=\"ws\">        </span># exceptions aren&#39;t as detailed.  The list call should be roughly</pre>
+<pre class=\"line before\"><span class=\"ws\">        </span># equivalent to the PySequence_Fast that &#39;&#39;.join() would do.</pre>
+<pre class=\"line current\"><span class=\"ws\">        </span>chunks = self.iterencode(o, _one_shot=True)
+<span class=\"ws\">        </span>         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^</pre>
+<pre class=\"line after\"><span class=\"ws\">        </span>if not isinstance(chunks, (list, tuple)):</pre>
+<pre class=\"line after\"><span class=\"ws\">            </span>chunks = list(chunks)</pre>
+<pre class=\"line after\"><span class=\"ws\">        </span>return &#39;&#39;.join(chunks)</pre>
+<pre class=\"line after\"><span class=\"ws\"></span> </pre>
+<pre class=\"line after\"><span class=\"ws\">    </span>def iterencode(self, o, _one_shot=False):</pre></div>
+</div>
+
+<li><div class=\"frame\" id=\"frame-1939199735216\">
+  <h4>File <cite class=\"filename\">\"C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.13_3.13.496.0_x64__qbz5n2kfra8p0\\Lib\\json\\encoder.py\"</cite>,
+      line <em class=\"line\">261</em>,
+      in <code class=\"function\">iterencode</code></h4>
+  <div class=\"source library\"><pre class=\"line before\"><span class=\"ws\">        </span>else:</pre>
+<pre class=\"line before\"><span class=\"ws\">            </span>_iterencode = _make_iterencode(</pre>
+<pre class=\"line before\"><span class=\"ws\">                </span>markers, self.default, _encoder, indent, floatstr,</pre>
+<pre class=\"line before\"><span class=\"ws\">                </span>self.key_separator, self.item_separator, self.sort_keys,</pre>
+<pre class=\"line before\"><span class=\"ws\">                </span>self.skipkeys, _one_shot)</pre>
+<pre class=\"line current\"><span class=\"ws\">        </span>return _iterencode(o, 0)
+<span class=\"ws\">        </span>       ^^^^^^^^^^^^^^^^^</pre>
+<pre class=\"line after\"><span class=\"ws\"></span> </pre>
+<pre class=\"line after\"><span class=\"ws\"></span>def _make_iterencode(markers, _default, _encoder, _indent, _floatstr,</pre>
+<pre class=\"line after\"><span class=\"ws\">        </span>_key_separator, _item_separator, _sort_keys, _skipkeys, _one_shot,</pre>
+<pre class=\"line after\"><span class=\"ws\">        </span>## HACK: hand-optimized bytecode; turn globals into locals</pre>
+<pre class=\"line after\"><span class=\"ws\">        </span>ValueError=ValueError,</pre></div>
+</div>
+
+<li><div class=\"frame\" id=\"frame-1939199735360\">
+  <h4>File <cite class=\"filename\">\"c:\\Users\\Balagsa\\ml_backend\\venv\\Lib\\site-packages\\flask\\json\\provider.py\"</cite>,
+      line <em class=\"line\">121</em>,
+      in <code class=\"function\">_default</code></h4>
+  <div class=\"source library\"><pre class=\"line before\"><span class=\"ws\">        </span>return dataclasses.asdict(o)  # type: ignore[arg-type]</pre>
+<pre class=\"line before\"><span class=\"ws\"></span> </pre>
+<pre class=\"line before\"><span class=\"ws\">    </span>if hasattr(o, &#34;__html__&#34;):</pre>
+<pre class=\"line before\"><span class=\"ws\">        </span>return str(o.__html__())</pre>
+<pre class=\"line before\"><span class=\"ws\"></span> </pre>
+<pre class=\"line current\"><span class=\"ws\">    </span>raise TypeError(f&#34;Object of type {type(o).__name__} is not JSON serializable&#34;)
+<span class=\"ws\">    </span>^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^</pre>
+<pre class=\"line after\"><span class=\"ws\"></span> </pre>
+<pre class=\"line after\"><span class=\"ws\"></span> </pre>
+<pre class=\"line after\"><span class=\"ws\"></span>class DefaultJSONProvider(JSONProvider):</pre>
+<pre class=\"line after\"><span class=\"ws\">    </span>&#34;&#34;&#34;Provide JSON operations using Python&#39;s built-in :mod:`json`</pre>
+<pre class=\"line after\"><span class=\"ws\">    </span>library. Serializes the following additional data types:</pre></div>
+</div>
+</ul>
+  <blockquote>TypeError: Object of type int32 is not JSON serializable
+</blockquote>
+</div>
+
+<div class=\"plain\">
+    <p>
+      This is the Copy/Paste friendly version of the traceback.
+    </p>
+    <textarea cols=\"50\" rows=\"10\" name=\"code\" readonly>Traceback (most recent call last):
+  File &#34;c:\\Users\\Balagsa\\ml_backend\\venv\\Lib\\site-packages\\flask\\app.py&#34;, line 1536, in __call__
+    return self.wsgi_app(environ, start_response)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File &#34;c:\\Users\\Balagsa\\ml_backend\\venv\\Lib\\site-packages\\flask\\app.py&#34;, line 1514, in wsgi_app
+    response = self.handle_exception(e)
+  File &#34;c:\\Users\\Balagsa\\ml_backend\\venv\\Lib\\site-packages\\flask\\app.py&#34;, line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File &#34;c:\\Users\\Balagsa\\ml_backend\\venv\\Lib\\site-packages\\flask\\app.py&#34;, line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File &#34;c:\\Users\\Balagsa\\ml_backend\\venv\\Lib\\site-packages\\flask\\app.py&#34;, line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File &#34;c:\\Users\\Balagsa\\ml_backend\\venv\\Lib\\site-packages\\flask\\app.py&#34;, line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File &#34;C:\\Users\\Balagsa\\ml_backend\\app.py&#34;, line 35, in diagnose
+    return jsonify({&#39;diagnosis&#39;: prediction[0]})
+  File &#34;c:\\Users\\Balagsa\\ml_backend\\venv\\Lib\\site-packages\\flask\\json\\__init__.py&#34;, line 170, in jsonify
+    return current_app.json.response(*args, **kwargs)  # type: ignore[return-value]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File &#34;c:\\Users\\Balagsa\\ml_backend\\venv\\Lib\\site-packages\\flask\\json\\provider.py&#34;, line 214, in response
+    f&#34;{self.dumps(obj, **dump_args)}\\n&#34;, mimetype=self.mimetype
+       ~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File &#34;c:\\Users\\Balagsa\\ml_backend\\venv\\Lib\\site-packages\\flask\\json\\provider.py&#34;, line 179, in dumps
+    return json.dumps(obj, **kwargs)
+           ~~~~~~~~~~^^^^^^^^^^^^^^^
+  File &#34;C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.13_3.13.496.0_x64__qbz5n2kfra8p0\\Lib\\json\\__init__.py&#34;, line 238, in dumps
+    **kw).encode(obj)
+          ~~~~~~^^^^^
+  File &#34;C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.13_3.13.496.0_x64__qbz5n2kfra8p0\\Lib\\json\\encoder.py&#34;, line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File &#34;C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.13_3.13.496.0_x64__qbz5n2kfra8p0\\Lib\\json\\encoder.py&#34;, line 261, in iterencode
+    return _iterencode(o, 0)
+  File &#34;c:\\Users\\Balagsa\\ml_backend\\venv\\Lib\\site-packages\\flask\\json\\provider.py&#34;, line 121, in _default
+    raise TypeError(f&#34;Object of type {type(o).__name__} is not JSON serializable&#34;)
+TypeError: Object of type int32 is not JSON serializable
+</textarea>
+</div>
+<div class=\"explanation\">
+  The debugger caught an exception in your WSGI application.  You can now
+  look at the traceback which led to the error.  <span class=\"nojavascript\">
+  If you enable JavaScript you can also use additional features such as code
+  execution (if the evalex feature is enabled), automatic pasting of the
+  exceptions and much more.</span>
+</div>
+      <div class=\"footer\">
+        Brought to you by <strong class=\"arthur\">DON'T PANIC</strong>, your
+        friendly Werkzeug powered traceback interpreter.
+      </div>
+    </div>
+
+    <div class=\"pin-prompt\">
+      <div class=\"inner\">
+        <h3>Console Locked</h3>
+        <p>
+          The console is locked and needs to be unlocked by entering the PIN.
+          You can find the PIN printed out on the standard output of your
+          shell that runs the server.
+        <form>
+          <p>PIN:
+            <input type=text name=pin size=14>
+            <input type=submit name=btn value=\"Confirm Pin\">
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
+
+<!--
+
+Traceback (most recent call last):
+  File \"c:\\Users\\Balagsa\\ml_backend\\venv\\Lib\\site-packages\\flask\\app.py\", line 1536, in __call__
+    return self.wsgi_app(environ, start_response)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File \"c:\\Users\\Balagsa\\ml_backend\\venv\\Lib\\site-packages\\flask\\app.py\", line 1514, in wsgi_app
+    response = self.handle_exception(e)
+  File \"c:\\Users\\Balagsa\\ml_backend\\venv\\Lib\\site-packages\\flask\\app.py\", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File \"c:\\Users\\Balagsa\\ml_backend\\venv\\Lib\\site-packages\\flask\\app.py\", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File \"c:\\Users\\Balagsa\\ml_backend\\venv\\Lib\\site-packages\\flask\\app.py\", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File \"c:\\Users\\Balagsa\\ml_backend\\venv\\Lib\\site-packages\\flask\\app.py\", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File \"C:\\Users\\Balagsa\\ml_backend\\app.py\", line 35, in diagnose
+    return jsonify({'diagnosis': prediction[0]})
+  File \"c:\\Users\\Balagsa\\ml_backend\\venv\\Lib\\site-packages\\flask\\json\\__init__.py\", line 170, in jsonify
+    return current_app.json.response(*args, **kwargs)  # type: ignore[return-value]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File \"c:\\Users\\Balagsa\\ml_backend\\venv\\Lib\\site-packages\\flask\\json\\provider.py\", line 214, in response
+    f\"{self.dumps(obj, **dump_args)}\\n\", mimetype=self.mimetype
+       ~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File \"c:\\Users\\Balagsa\\ml_backend\\venv\\Lib\\site-packages\\flask\\json\\provider.py\", line 179, in dumps
+    return json.dumps(obj, **kwargs)
+           ~~~~~~~~~~^^^^^^^^^^^^^^^
+  File \"C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.13_3.13.496.0_x64__qbz5n2kfra8p0\\Lib\\json\\__init__.py\", line 238, in dumps
+    **kw).encode(obj)
+          ~~~~~~^^^^^
+  File \"C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.13_3.13.496.0_x64__qbz5n2kfra8p0\\Lib\\json\\encoder.py\", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File \"C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.13_3.13.496.0_x64__qbz5n2kfra8p0\\Lib\\json\\encoder.py\", line 261, in iterencode
+    return _iterencode(o, 0)
+  File \"c:\\Users\\Balagsa\\ml_backend\\venv\\Lib\\site-packages\\flask\\json\\provider.py\", line 121, in _default
+    raise TypeError(f\"Object of type {type(o).__name__} is not JSON serializable\")
+TypeError: Object of type int32 is not JSON serializable
+
+
+-->
+"} 
+[2025-01-28 03:50:54] local.ERROR: Exception occurred while making API request {"exception":"cURL error 7: Failed to connect to 127.0.0.1 port 5000 after 2021 ms: Couldn't connect to server (see https://curl.haxx.se/libcurl/c/libcurl-errors.html) for http://127.0.0.1:5000/diagnose"} 
+[2025-01-28 03:52:12] local.ERROR: API request failed {"response":"{
+  \"error\": \"Object of type int32 is not JSON serializable\"
+}
+"} 
+[2025-01-28 03:54:16] local.ERROR: API request failed {"status":500,"response":"{
+  \"error\": \"Object of type int32 is not JSON serializable\"
+}
+"} 
+[2025-01-28 03:59:29] local.ERROR: API request failed {"status":500,"response":"{
+  \"error\": \"Object of type int32 is not JSON serializable\"
+}
+"} 
+[2025-01-28 04:14:42] local.INFO: Sending symptoms to API {"symptoms":["fever"]} 
+[2025-01-28 04:14:42] local.INFO: Received response from API {"response":{"diagnosis":0}} 
+[2025-01-28 04:19:47] local.INFO: Sending symptoms to API {"symptoms":["cough"]} 
+[2025-01-28 04:19:47] local.ERROR: API request failed {"status":500,"response":"{
+  \"error\": \"Object of type int32 is not JSON serializable\"
+}
+"} 
+[2025-01-28 04:21:42] local.INFO: Sending symptoms to API {"symptoms":["fever"]} 
+[2025-01-28 04:21:43] local.INFO: Received response from API {"response":{"diagnosis":0}} 
+[2025-01-28 04:26:16] local.INFO: Sending symptoms to API {"symptoms":["cough"]} 
+[2025-01-28 04:26:16] local.INFO: Received response from API {"response":{"diagnosis":"Disease B"}} 
+[2025-01-28 04:32:31] local.INFO: Sending symptoms to API {"symptoms":["cough","cold"]} 
+[2025-01-28 04:32:31] local.INFO: Received response from API {"response":{"diagnosis":"Disease D"}} 
+[2025-01-28 04:38:58] local.INFO: Sending symptoms to API {"symptoms":["cough","fatigue","shortness of breath"]} 
+[2025-01-28 04:38:58] local.INFO: Received response from API {"response":{"diagnosis":"Allergic Rhinitis"}} 
+[2025-01-28 04:42:05] local.INFO: Sending symptoms to API {"symptoms":["cough","fatigue","shortness of breath"]} 
+[2025-01-28 04:42:05] local.INFO: Received response from API {"response":{"diagnosis":"Allergic Rhinitis","warning":"The diagnosis might be incorrect based on the provided symptoms."}} 
+[2025-01-28 04:45:49] local.INFO: Sending symptoms to API {"symptoms":["cough","fatigue","shortness of breath"]} 
+[2025-01-28 04:45:49] local.ERROR: API request failed {"status":500,"response":"{
+  \"error\": \"X has 4 features, but RandomForestClassifier is expecting 10 features as input.\"
+}
+"} 
+[2025-01-28 04:48:07] local.INFO: Sending symptoms to API {"symptoms":["cough","fatigue","shortness of breath"]} 
+[2025-01-28 04:48:07] local.INFO: Received response from API {"response":{"diagnosis":"Mononucleosis (Mono)","warning":"The diagnosis might be incorrect based on the provided symptoms."}} 
+[2025-01-28 04:49:51] local.INFO: Sending symptoms to API {"symptoms":["cough","fatigue","shortness of breath"]} 
+[2025-01-28 04:49:51] local.INFO: Received response from API {"response":{"diagnosis":"Mononucleosis (Mono)","warning":"The diagnosis might be incorrect based on the provided symptoms."}} 
+[2025-01-28 04:50:00] local.INFO: Sending symptoms to API {"symptoms":["cough","cold","fever"]} 
+[2025-01-28 04:50:00] local.INFO: Received response from API {"response":{"diagnosis":"Influenza (Flu)","warning":"The diagnosis might be incorrect based on the provided symptoms."}} 
+[2025-01-28 04:50:37] local.INFO: Sending symptoms to API {"symptoms":["fever","headache","sore throat"]} 
+[2025-01-28 04:50:37] local.INFO: Received response from API {"response":{"diagnosis":"Strep Throat"}} 
+[2025-01-28 04:50:57] local.INFO: Sending symptoms to API {"symptoms":["cough","fatigue","shortness of breath"]} 
+[2025-01-28 04:50:57] local.INFO: Received response from API {"response":{"diagnosis":"Mononucleosis (Mono)","warning":"The diagnosis might be incorrect based on the provided symptoms."}} 
+[2025-01-28 04:54:04] local.INFO: Sending symptoms to API {"symptoms":["cough","fatigue","shortness of breath"]} 
+[2025-01-28 04:54:04] local.INFO: Received response from API {"response":{"diagnosis":"Asthma"}} 
+[2025-01-28 04:54:15] local.INFO: Sending symptoms to API {"symptoms":["cold","fever","headache"]} 
+[2025-01-28 04:54:15] local.INFO: Received response from API {"response":{"diagnosis":"Strep Throat","warning":"The diagnosis might be incorrect based on the provided symptoms."}} 
+[2025-01-28 04:54:51] local.INFO: Sending symptoms to API {"symptoms":["fatigue","nausea","diarrhea"]} 
+[2025-01-28 04:54:51] local.INFO: Received response from API {"response":{"diagnosis":"Gastroenteritis (Stomach Flu)"}} 
+[2025-01-28 05:08:22] local.INFO: Sending symptoms to API {"symptoms":["cough","fatigue","sore throat"]} 
+[2025-01-28 05:08:22] local.INFO: Received response from API {"response":{"diagnosis":"Bronchitis"}} 
+[2025-02-04 12:49:11] local.INFO: Sending symptoms to API {"symptoms":["cough","cold","fever"]} 
+[2025-02-04 12:49:14] local.ERROR: Exception occurred while making API request {"exception":"cURL error 7: Failed to connect to 127.0.0.1 port 5000 after 2021 ms: Could not connect to server (see https://curl.haxx.se/libcurl/c/libcurl-errors.html) for http://127.0.0.1:5000/diagnose"} 
+[2025-02-04 13:57:34] local.INFO: Sending symptoms to API {"symptoms":["cough","cold","fever"]} 
+[2025-02-04 13:57:35] local.INFO: Received response from API {"response":{"diagnosis":"Allergic Rhinitis","warning":"The diagnosis might be incorrect based on the provided symptoms."}} 
+[2025-02-04 13:58:32] local.INFO: Sending symptoms to API {"symptoms":["cough","cold","fever"]} 
+[2025-02-04 13:58:32] local.ERROR: API request failed {"status":500,"response":"{
+  \"error\": \"name 'symptom_mapping' is not defined\"
+}
+"} 
+[2025-02-04 13:58:51] local.INFO: Sending symptoms to API {"symptoms":["cough","cold","fever"]} 
+[2025-02-04 13:58:51] local.ERROR: API request failed {"status":500,"response":"{
+  \"error\": \"name 'symptom_mapping' is not defined\"
+}
+"} 
+[2025-02-04 14:11:06] local.INFO: Sending symptoms to API {"symptoms":["cough","cold","fever"]} 
+[2025-02-04 14:11:06] local.ERROR: API request failed {"status":400,"response":"{
+  \"error\": \"(sqlite3.ProgrammingError) Error binding parameter 2: type 'dict' is not supported\\n[SQL: INSERT INTO diagnosis_records (symptoms, diagnosis) VALUES (?, ?)]\\n[parameters: (\\\"['cough', 'cold', 'fever']\\\", {'diagnoses': [{'disease': 'Allergic Rhinitis', 'probability': np.float64(0.38)}, {'disease': 'Food Poisoning', 'probability': np.float64(0.15)}, {'disease': 'Common Cold', 'probability': np.float64(0.15)}]})]\\n(Background on this error at: https://sqlalche.me/e/20/f405)\"
+}
+"} 
+[2025-02-04 14:12:39] local.INFO: Sending symptoms to API {"symptoms":["cough","cold","fever"]} 
+[2025-02-04 14:12:39] local.ERROR: API request failed {"status":400,"response":"{
+  \"error\": \"(sqlite3.ProgrammingError) Error binding parameter 2: type 'dict' is not supported\\n[SQL: INSERT INTO diagnosis_records (symptoms, diagnosis) VALUES (?, ?)]\\n[parameters: (\\\"['cough', 'cold', 'fever']\\\", {'diagnoses': [{'disease': 'Allergic Rhinitis', 'probability': np.float64(0.38)}, {'disease': 'Food Poisoning', 'probability': np.float64(0.15)}, {'disease': 'Common Cold', 'probability': np.float64(0.15)}]})]\\n(Background on this error at: https://sqlalche.me/e/20/f405)\"
+}
+"} 
+[2025-02-04 14:13:36] local.INFO: Sending symptoms to API {"symptoms":["cough","cold","fever"]} 
+[2025-02-04 14:13:36] local.INFO: Received response from API {"response":{"diagnosis":"Allergic Rhinitis","warning":"The diagnosis might be incorrect based on the provided symptoms."}} 
+[2025-02-04 14:21:35] local.INFO: Sending symptoms to API {"symptoms":["cough","cold","fever"]} 
+[2025-02-04 14:21:35] local.ERROR: API request failed {"status":400,"response":"{
+  \"error\": \"(sqlite3.ProgrammingError) Error binding parameter 2: type 'dict' is not supported\\n[SQL: INSERT INTO diagnosis_records (symptoms, diagnosis) VALUES (?, ?)]\\n[parameters: (\\\"['cough', 'cold', 'fever']\\\", {'diagnoses': [{'disease': 'Allergic Rhinitis', 'probability': np.float64(0.38)}, {'disease': 'Food Poisoning', 'probability': np.float64(0.15)}, {'disease': 'Common Cold', 'probability': np.float64(0.15)}]})]\\n(Background on this error at: https://sqlalche.me/e/20/f405)\"
+}
+"} 
+[2025-02-04 14:25:10] local.INFO: Sending symptoms to API {"symptoms":["cough","cold","fever"]} 
+[2025-02-04 14:25:10] local.ERROR: API request failed {"status":400,"response":"{
+  \"error\": \"(sqlite3.ProgrammingError) Error binding parameter 2: type 'dict' is not supported\\n[SQL: INSERT INTO diagnosis_records (symptoms, diagnosis) VALUES (?, ?)]\\n[parameters: (\\\"['cough', 'cold', 'fever']\\\", {'diagnoses': [{'disease': 'Allergic Rhinitis', 'probability': np.float64(0.38)}, {'disease': 'Food Poisoning', 'probability': np.float64(0.15)}, {'disease': 'Common Cold', 'probability': np.float64(0.15)}]})]\\n(Background on this error at: https://sqlalche.me/e/20/f405)\"
+}
+"} 
+[2025-02-04 14:30:34] local.INFO: Sending symptoms to API {"symptoms":["cough","cold","fever"]} 
+[2025-02-04 14:30:34] local.ERROR: API request failed {"status":400,"response":"{
+  \"error\": \"(sqlite3.ProgrammingError) Error binding parameter 2: type 'dict' is not supported\\n[SQL: INSERT INTO diagnosis_records (symptoms, diagnosis) VALUES (?, ?)]\\n[parameters: (\\\"['cough', 'cold', 'fever']\\\", {'diagnoses': [{'disease': 'Allergic Rhinitis', 'probability': np.float64(0.38)}, {'disease': 'Food Poisoning', 'probability': np.float64(0.15)}, {'disease': 'Common Cold', 'probability': np.float64(0.15)}]})]\\n(Background on this error at: https://sqlalche.me/e/20/f405)\"
+}
+"} 
+[2025-02-04 14:32:32] local.INFO: Sending symptoms to API {"symptoms":["cough","cold","fever"]} 
+[2025-02-04 14:32:32] local.INFO: Received response from API {"response":{"diagnoses":[{"disease":"Allergic Rhinitis","probability":0.38},{"disease":"Food Poisoning","probability":0.15},{"disease":"Common Cold","probability":0.15}]}} 
+[2025-02-04 14:32:32] local.ERROR: Array to string conversion (Connection: sqlite, SQL: insert into "diagnoses" ("symptoms", "diagnosis", "updated_at", "created_at") values (cough, cold, fever, ?, 2025-02-04 14:32:32, 2025-02-04 14:32:32)) {"exception":"[object] (Illuminate\\Database\\QueryException(code: 0): Array to string conversion (Connection: sqlite, SQL: insert into \"diagnoses\" (\"symptoms\", \"diagnosis\", \"updated_at\", \"created_at\") values (cough, cold, fever, ?, 2025-02-04 14:32:32, 2025-02-04 14:32:32)) at C:\\Users\\User\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:825)
+[stacktrace]
+#0 C:\\Users\\User\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(779): Illuminate\\Database\\Connection->runQueryCallback('insert into \"di...', Array, Object(Closure))
+#1 C:\\Users\\User\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(560): Illuminate\\Database\\Connection->run('insert into \"di...', Array, Object(Closure))
+#2 C:\\Users\\User\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(524): Illuminate\\Database\\Connection->statement('insert into \"di...', Array)
+#3 C:\\Users\\User\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Query\\Processors\\Processor.php(32): Illuminate\\Database\\Connection->insert('insert into \"di...', Array)
+#4 C:\\Users\\User\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Query\\Builder.php(3799): Illuminate\\Database\\Query\\Processors\\Processor->processInsertGetId(Object(Illuminate\\Database\\Query\\Builder), 'insert into \"di...', Array, 'id')
+#5 C:\\Users\\User\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Builder.php(2099): Illuminate\\Database\\Query\\Builder->insertGetId(Array, 'id')
+#6 C:\\Users\\User\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Model.php(1359): Illuminate\\Database\\Eloquent\\Builder->__call('insertGetId', Array)
+#7 C:\\Users\\User\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Model.php(1324): Illuminate\\Database\\Eloquent\\Model->insertAndSetId(Object(Illuminate\\Database\\Eloquent\\Builder), Array)
+#8 C:\\Users\\User\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Model.php(1163): Illuminate\\Database\\Eloquent\\Model->performInsert(Object(Illuminate\\Database\\Eloquent\\Builder))
+#9 C:\\Users\\User\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Builder.php(1107): Illuminate\\Database\\Eloquent\\Model->save()
+#10 C:\\Users\\User\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\helpers.php(399): Illuminate\\Database\\Eloquent\\Builder->{closure:Illuminate\\Database\\Eloquent\\Builder::create():1106}(Object(App\\Models\\Diagnosis))
+#11 C:\\Users\\User\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Builder.php(1106): tap(Object(App\\Models\\Diagnosis), Object(Closure))
+#12 C:\\Users\\User\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Traits\\ForwardsCalls.php(23): Illuminate\\Database\\Eloquent\\Builder->create(Array)
+#13 C:\\Users\\User\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Model.php(2368): Illuminate\\Database\\Eloquent\\Model->forwardCallTo(Object(Illuminate\\Database\\Eloquent\\Builder), 'create', Array)
+#14 C:\\Users\\User\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Model.php(2380): Illuminate\\Database\\Eloquent\\Model->__call('create', Array)
+#15 C:\\Users\\User\\SDSCapstone\\app\\Http\\Controllers\\DiagnosisController.php(23): Illuminate\\Database\\Eloquent\\Model::__callStatic('create', Array)
+#16 C:\\Users\\User\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\ControllerDispatcher.php(47): App\\Http\\Controllers\\DiagnosisController->diagnose(Object(Illuminate\\Http\\Request))
+#17 C:\\Users\\User\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(266): Illuminate\\Routing\\ControllerDispatcher->dispatch(Object(Illuminate\\Routing\\Route), Object(App\\Http\\Controllers\\DiagnosisController), 'diagnose')
+#18 C:\\Users\\User\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(212): Illuminate\\Routing\\Route->runController()
+#19 C:\\Users\\User\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(808): Illuminate\\Routing\\Route->run()
+#20 C:\\Users\\User\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(170): Illuminate\\Routing\\Router->{closure:Illuminate\\Routing\\Router::runRouteWithinStack():807}(Object(Illuminate\\Http\\Request))
+#21 C:\\Users\\User\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php(51): Illuminate\\Pipeline\\Pipeline->{closure:Illuminate\\Pipeline\\Pipeline::prepareDestination():168}(Object(Illuminate\\Http\\Request))
+#22 C:\\Users\\User\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#23 C:\\Users\\User\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken.php(88): Illuminate\\Pipeline\\Pipeline->{closure:{closure:Illuminate\\Pipeline\\Pipeline::carry():184}:185}(Object(Illuminate\\Http\\Request))
+#24 C:\\Users\\User\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#25 C:\\Users\\User\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Middleware\\ShareErrorsFromSession.php(49): Illuminate\\Pipeline\\Pipeline->{closure:{closure:Illuminate\\Pipeline\\Pipeline::carry():184}:185}(Object(Illuminate\\Http\\Request))
+#26 C:\\Users\\User\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\View\\Middleware\\ShareErrorsFromSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#27 C:\\Users\\User\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Session\\Middleware\\StartSession.php(121): Illuminate\\Pipeline\\Pipeline->{closure:{closure:Illuminate\\Pipeline\\Pipeline::carry():184}:185}(Object(Illuminate\\Http\\Request))
+#28 C:\\Users\\User\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Session\\Middleware\\StartSession.php(64): Illuminate\\Session\\Middleware\\StartSession->handleStatefulRequest(Object(Illuminate\\Http\\Request), Object(Illuminate\\Session\\Store), Object(Closure))
+#29 C:\\Users\\User\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Session\\Middleware\\StartSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#30 C:\\Users\\User\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse.php(37): Illuminate\\Pipeline\\Pipeline->{closure:{closure:Illuminate\\Pipeline\\Pipeline::carry():184}:185}(Object(Illuminate\\Http\\Request))
+#31 C:\\Users\\User\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#32 C:\\Users\\User\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\EncryptCookies.php(75): Illuminate\\Pipeline\\Pipeline->{closure:{closure:Illuminate\\Pipeline\\Pipeline::carry():184}:185}(Object(Illuminate\\Http\\Request))
+#33 C:\\Users\\User\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Cookie\\Middleware\\EncryptCookies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#34 C:\\Users\\User\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(127): Illuminate\\Pipeline\\Pipeline->{closure:{closure:Illuminate\\Pipeline\\Pipeline::carry():184}:185}(Object(Illuminate\\Http\\Request))
+#35 C:\\Users\\User\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(807): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#36 C:\\Users\\User\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(786): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#37 C:\\Users\\User\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(750): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#38 C:\\Users\\User\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(739): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#39 C:\\Users\\User\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(201): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#40 C:\\Users\\User\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(170): Illuminate\\Foundation\\Http\\Kernel->{closure:Illuminate\\Foundation\\Http\\Kernel::dispatchToRouter():198}(Object(Illuminate\\Http\\Request))
+#41 C:\\Users\\User\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->{closure:Illuminate\\Pipeline\\Pipeline::prepareDestination():168}(Object(Illuminate\\Http\\Request))
+#42 C:\\Users\\User\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#43 C:\\Users\\User\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#44 C:\\Users\\User\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->{closure:{closure:Illuminate\\Pipeline\\Pipeline::carry():184}:185}(Object(Illuminate\\Http\\Request))
+#45 C:\\Users\\User\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TrimStrings.php(51): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#46 C:\\Users\\User\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#47 C:\\Users\\User\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->{closure:{closure:Illuminate\\Pipeline\\Pipeline::carry():184}:185}(Object(Illuminate\\Http\\Request))
+#48 C:\\Users\\User\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#49 C:\\Users\\User\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance.php(110): Illuminate\\Pipeline\\Pipeline->{closure:{closure:Illuminate\\Pipeline\\Pipeline::carry():184}:185}(Object(Illuminate\\Http\\Request))
+#50 C:\\Users\\User\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#51 C:\\Users\\User\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\HandleCors.php(49): Illuminate\\Pipeline\\Pipeline->{closure:{closure:Illuminate\\Pipeline\\Pipeline::carry():184}:185}(Object(Illuminate\\Http\\Request))
+#52 C:\\Users\\User\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Http\\Middleware\\HandleCors->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#53 C:\\Users\\User\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\TrustProxies.php(58): Illuminate\\Pipeline\\Pipeline->{closure:{closure:Illuminate\\Pipeline\\Pipeline::carry():184}:185}(Object(Illuminate\\Http\\Request))
+#54 C:\\Users\\User\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Http\\Middleware\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#55 C:\\Users\\User\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\InvokeDeferredCallbacks.php(22): Illuminate\\Pipeline\\Pipeline->{closure:{closure:Illuminate\\Pipeline\\Pipeline::carry():184}:185}(Object(Illuminate\\Http\\Request))
+#56 C:\\Users\\User\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Foundation\\Http\\Middleware\\InvokeDeferredCallbacks->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#57 C:\\Users\\User\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(127): Illuminate\\Pipeline\\Pipeline->{closure:{closure:Illuminate\\Pipeline\\Pipeline::carry():184}:185}(Object(Illuminate\\Http\\Request))
+#58 C:\\Users\\User\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(176): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#59 C:\\Users\\User\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(145): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#60 C:\\Users\\User\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1193): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#61 C:\\Users\\User\\SDSCapstone\\public\\index.php(17): Illuminate\\Foundation\\Application->handleRequest(Object(Illuminate\\Http\\Request))
+#62 C:\\Users\\User\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(23): require_once('C:\\\\Users\\\\User\\\\S...')
+#63 {main}
+
+[previous exception] [object] (ErrorException(code: 0): Array to string conversion at C:\\Users\\User\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:719)
+[stacktrace]
+#0 C:\\Users\\User\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\HandleExceptions.php(290): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(2, 'Array to string...', 'C:\\\\Users\\\\User\\\\S...', 719)
+#1 [internal function]: Illuminate\\Foundation\\Bootstrap\\HandleExceptions->{closure:Illuminate\\Foundation\\Bootstrap\\HandleExceptions::forwardsTo():289}(2, 'Array to string...', 'C:\\\\Users\\\\User\\\\S...', 719)
+#2 C:\\Users\\User\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(719): PDOStatement->bindValue(2, Array, 2)
+#3 C:\\Users\\User\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(567): Illuminate\\Database\\Connection->bindValues(Object(PDOStatement), Array)
+#4 C:\\Users\\User\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(812): Illuminate\\Database\\Connection->{closure:Illuminate\\Database\\Connection::statement():560}('insert into \"di...', Array)
+#5 C:\\Users\\User\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(779): Illuminate\\Database\\Connection->runQueryCallback('insert into \"di...', Array, Object(Closure))
+#6 C:\\Users\\User\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(560): Illuminate\\Database\\Connection->run('insert into \"di...', Array, Object(Closure))
+#7 C:\\Users\\User\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(524): Illuminate\\Database\\Connection->statement('insert into \"di...', Array)
+#8 C:\\Users\\User\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Query\\Processors\\Processor.php(32): Illuminate\\Database\\Connection->insert('insert into \"di...', Array)
+#9 C:\\Users\\User\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Query\\Builder.php(3799): Illuminate\\Database\\Query\\Processors\\Processor->processInsertGetId(Object(Illuminate\\Database\\Query\\Builder), 'insert into \"di...', Array, 'id')
+#10 C:\\Users\\User\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Builder.php(2099): Illuminate\\Database\\Query\\Builder->insertGetId(Array, 'id')
+#11 C:\\Users\\User\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Model.php(1359): Illuminate\\Database\\Eloquent\\Builder->__call('insertGetId', Array)
+#12 C:\\Users\\User\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Model.php(1324): Illuminate\\Database\\Eloquent\\Model->insertAndSetId(Object(Illuminate\\Database\\Eloquent\\Builder), Array)
+#13 C:\\Users\\User\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Model.php(1163): Illuminate\\Database\\Eloquent\\Model->performInsert(Object(Illuminate\\Database\\Eloquent\\Builder))
+#14 C:\\Users\\User\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Builder.php(1107): Illuminate\\Database\\Eloquent\\Model->save()
+#15 C:\\Users\\User\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\helpers.php(399): Illuminate\\Database\\Eloquent\\Builder->{closure:Illuminate\\Database\\Eloquent\\Builder::create():1106}(Object(App\\Models\\Diagnosis))
+#16 C:\\Users\\User\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Builder.php(1106): tap(Object(App\\Models\\Diagnosis), Object(Closure))
+#17 C:\\Users\\User\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Traits\\ForwardsCalls.php(23): Illuminate\\Database\\Eloquent\\Builder->create(Array)
+#18 C:\\Users\\User\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Model.php(2368): Illuminate\\Database\\Eloquent\\Model->forwardCallTo(Object(Illuminate\\Database\\Eloquent\\Builder), 'create', Array)
+#19 C:\\Users\\User\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Model.php(2380): Illuminate\\Database\\Eloquent\\Model->__call('create', Array)
+#20 C:\\Users\\User\\SDSCapstone\\app\\Http\\Controllers\\DiagnosisController.php(23): Illuminate\\Database\\Eloquent\\Model::__callStatic('create', Array)
+#21 C:\\Users\\User\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\ControllerDispatcher.php(47): App\\Http\\Controllers\\DiagnosisController->diagnose(Object(Illuminate\\Http\\Request))
+#22 C:\\Users\\User\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(266): Illuminate\\Routing\\ControllerDispatcher->dispatch(Object(Illuminate\\Routing\\Route), Object(App\\Http\\Controllers\\DiagnosisController), 'diagnose')
+#23 C:\\Users\\User\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(212): Illuminate\\Routing\\Route->runController()
+#24 C:\\Users\\User\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(808): Illuminate\\Routing\\Route->run()
+#25 C:\\Users\\User\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(170): Illuminate\\Routing\\Router->{closure:Illuminate\\Routing\\Router::runRouteWithinStack():807}(Object(Illuminate\\Http\\Request))
+#26 C:\\Users\\User\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php(51): Illuminate\\Pipeline\\Pipeline->{closure:Illuminate\\Pipeline\\Pipeline::prepareDestination():168}(Object(Illuminate\\Http\\Request))
+#27 C:\\Users\\User\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#28 C:\\Users\\User\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken.php(88): Illuminate\\Pipeline\\Pipeline->{closure:{closure:Illuminate\\Pipeline\\Pipeline::carry():184}:185}(Object(Illuminate\\Http\\Request))
+#29 C:\\Users\\User\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#30 C:\\Users\\User\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Middleware\\ShareErrorsFromSession.php(49): Illuminate\\Pipeline\\Pipeline->{closure:{closure:Illuminate\\Pipeline\\Pipeline::carry():184}:185}(Object(Illuminate\\Http\\Request))
+#31 C:\\Users\\User\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\View\\Middleware\\ShareErrorsFromSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#32 C:\\Users\\User\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Session\\Middleware\\StartSession.php(121): Illuminate\\Pipeline\\Pipeline->{closure:{closure:Illuminate\\Pipeline\\Pipeline::carry():184}:185}(Object(Illuminate\\Http\\Request))
+#33 C:\\Users\\User\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Session\\Middleware\\StartSession.php(64): Illuminate\\Session\\Middleware\\StartSession->handleStatefulRequest(Object(Illuminate\\Http\\Request), Object(Illuminate\\Session\\Store), Object(Closure))
+#34 C:\\Users\\User\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Session\\Middleware\\StartSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#35 C:\\Users\\User\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse.php(37): Illuminate\\Pipeline\\Pipeline->{closure:{closure:Illuminate\\Pipeline\\Pipeline::carry():184}:185}(Object(Illuminate\\Http\\Request))
+#36 C:\\Users\\User\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#37 C:\\Users\\User\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\EncryptCookies.php(75): Illuminate\\Pipeline\\Pipeline->{closure:{closure:Illuminate\\Pipeline\\Pipeline::carry():184}:185}(Object(Illuminate\\Http\\Request))
+#38 C:\\Users\\User\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Cookie\\Middleware\\EncryptCookies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#39 C:\\Users\\User\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(127): Illuminate\\Pipeline\\Pipeline->{closure:{closure:Illuminate\\Pipeline\\Pipeline::carry():184}:185}(Object(Illuminate\\Http\\Request))
+#40 C:\\Users\\User\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(807): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#41 C:\\Users\\User\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(786): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#42 C:\\Users\\User\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(750): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#43 C:\\Users\\User\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(739): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#44 C:\\Users\\User\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(201): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#45 C:\\Users\\User\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(170): Illuminate\\Foundation\\Http\\Kernel->{closure:Illuminate\\Foundation\\Http\\Kernel::dispatchToRouter():198}(Object(Illuminate\\Http\\Request))
+#46 C:\\Users\\User\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->{closure:Illuminate\\Pipeline\\Pipeline::prepareDestination():168}(Object(Illuminate\\Http\\Request))
+#47 C:\\Users\\User\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#48 C:\\Users\\User\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#49 C:\\Users\\User\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->{closure:{closure:Illuminate\\Pipeline\\Pipeline::carry():184}:185}(Object(Illuminate\\Http\\Request))
+#50 C:\\Users\\User\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TrimStrings.php(51): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#51 C:\\Users\\User\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#52 C:\\Users\\User\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->{closure:{closure:Illuminate\\Pipeline\\Pipeline::carry():184}:185}(Object(Illuminate\\Http\\Request))
+#53 C:\\Users\\User\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#54 C:\\Users\\User\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance.php(110): Illuminate\\Pipeline\\Pipeline->{closure:{closure:Illuminate\\Pipeline\\Pipeline::carry():184}:185}(Object(Illuminate\\Http\\Request))
+#55 C:\\Users\\User\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#56 C:\\Users\\User\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\HandleCors.php(49): Illuminate\\Pipeline\\Pipeline->{closure:{closure:Illuminate\\Pipeline\\Pipeline::carry():184}:185}(Object(Illuminate\\Http\\Request))
+#57 C:\\Users\\User\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Http\\Middleware\\HandleCors->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#58 C:\\Users\\User\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\TrustProxies.php(58): Illuminate\\Pipeline\\Pipeline->{closure:{closure:Illuminate\\Pipeline\\Pipeline::carry():184}:185}(Object(Illuminate\\Http\\Request))
+#59 C:\\Users\\User\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Http\\Middleware\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#60 C:\\Users\\User\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\InvokeDeferredCallbacks.php(22): Illuminate\\Pipeline\\Pipeline->{closure:{closure:Illuminate\\Pipeline\\Pipeline::carry():184}:185}(Object(Illuminate\\Http\\Request))
+#61 C:\\Users\\User\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Foundation\\Http\\Middleware\\InvokeDeferredCallbacks->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#62 C:\\Users\\User\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(127): Illuminate\\Pipeline\\Pipeline->{closure:{closure:Illuminate\\Pipeline\\Pipeline::carry():184}:185}(Object(Illuminate\\Http\\Request))
+#63 C:\\Users\\User\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(176): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#64 C:\\Users\\User\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(145): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#65 C:\\Users\\User\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1193): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#66 C:\\Users\\User\\SDSCapstone\\public\\index.php(17): Illuminate\\Foundation\\Application->handleRequest(Object(Illuminate\\Http\\Request))
+#67 C:\\Users\\User\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(23): require_once('C:\\\\Users\\\\User\\\\S...')
+#68 {main}
+"} 
+[2025-02-04 14:45:16] local.ERROR: SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'diagnoses' already exists (Connection: mysql, SQL: create table `diagnoses` (`id` bigint unsigned not null auto_increment primary key, `created_at` timestamp null, `updated_at` timestamp null) default character set utf8mb4 collate 'utf8mb4_unicode_ci') {"exception":"[object] (Illuminate\\Database\\QueryException(code: 42S01): SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'diagnoses' already exists (Connection: mysql, SQL: create table `diagnoses` (`id` bigint unsigned not null auto_increment primary key, `created_at` timestamp null, `updated_at` timestamp null) default character set utf8mb4 collate 'utf8mb4_unicode_ci') at C:\\Users\\User\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:825)
+[stacktrace]
+#0 C:\\Users\\User\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(779): Illuminate\\Database\\Connection->runQueryCallback('create table `d...', Array, Object(Closure))
+#1 C:\\Users\\User\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(560): Illuminate\\Database\\Connection->run('create table `d...', Array, Object(Closure))
+#2 C:\\Users\\User\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Schema\\Blueprint.php(118): Illuminate\\Database\\Connection->statement('create table `d...')
+#3 C:\\Users\\User\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Schema\\Builder.php(564): Illuminate\\Database\\Schema\\Blueprint->build(Object(Illuminate\\Database\\MySqlConnection), Object(Illuminate\\Database\\Schema\\Grammars\\MySqlGrammar))
+#4 C:\\Users\\User\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Schema\\Builder.php(418): Illuminate\\Database\\Schema\\Builder->build(Object(Illuminate\\Database\\Schema\\Blueprint))
+#5 C:\\Users\\User\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Facades\\Facade.php(361): Illuminate\\Database\\Schema\\Builder->create('diagnoses', Object(Closure))
+#6 C:\\Users\\User\\SDSCapstone\\database\\migrations\\2025_02_04_144422_create_diagnoses_table.php(14): Illuminate\\Support\\Facades\\Facade::__callStatic('create', Array)
+#7 C:\\Users\\User\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(476): Illuminate\\Database\\Migrations\\Migration@anonymous->up()
+#8 C:\\Users\\User\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(401): Illuminate\\Database\\Migrations\\Migrator->runMethod(Object(Illuminate\\Database\\MySqlConnection), Object(Illuminate\\Database\\Migrations\\Migration@anonymous), 'up')
+#9 C:\\Users\\User\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(410): Illuminate\\Database\\Migrations\\Migrator->{closure:Illuminate\\Database\\Migrations\\Migrator::runMigration():397}()
+#10 C:\\Users\\User\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(213): Illuminate\\Database\\Migrations\\Migrator->runMigration(Object(Illuminate\\Database\\Migrations\\Migration@anonymous), 'up')
+#11 C:\\Users\\User\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\View\\Components\\Task.php(40): Illuminate\\Database\\Migrations\\Migrator->{closure:Illuminate\\Database\\Migrations\\Migrator::runUp():213}()
+#12 C:\\Users\\User\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(737): Illuminate\\Console\\View\\Components\\Task->render('2025_02_04_1444...', Object(Closure))
+#13 C:\\Users\\User\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(213): Illuminate\\Database\\Migrations\\Migrator->write('Illuminate\\\\Cons...', '2025_02_04_1444...', Object(Closure))
+#14 C:\\Users\\User\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(180): Illuminate\\Database\\Migrations\\Migrator->runUp('C:\\\\Users\\\\User\\\\S...', 1, false)
+#15 C:\\Users\\User\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(123): Illuminate\\Database\\Migrations\\Migrator->runPending(Array, Array)
+#16 C:\\Users\\User\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Console\\Migrations\\MigrateCommand.php(116): Illuminate\\Database\\Migrations\\Migrator->run(Array, Array)
+#17 C:\\Users\\User\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(616): Illuminate\\Database\\Console\\Migrations\\MigrateCommand->{closure:Illuminate\\Database\\Console\\Migrations\\MigrateCommand::runMigrations():109}()
+#18 C:\\Users\\User\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Console\\Migrations\\MigrateCommand.php(109): Illuminate\\Database\\Migrations\\Migrator->usingConnection(NULL, Object(Closure))
+#19 C:\\Users\\User\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Console\\Migrations\\MigrateCommand.php(88): Illuminate\\Database\\Console\\Migrations\\MigrateCommand->runMigrations()
+#20 C:\\Users\\User\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(36): Illuminate\\Database\\Console\\Migrations\\MigrateCommand->handle()
+#21 C:\\Users\\User\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(43): Illuminate\\Container\\BoundMethod::{closure:Illuminate\\Container\\BoundMethod::call():35}()
+#22 C:\\Users\\User\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(95): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#23 C:\\Users\\User\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(35): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#24 C:\\Users\\User\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(694): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#25 C:\\Users\\User\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(213): Illuminate\\Container\\Container->call(Array)
+#26 C:\\Users\\User\\SDSCapstone\\vendor\\symfony\\console\\Command\\Command.php(279): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#27 C:\\Users\\User\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(182): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#28 C:\\Users\\User\\SDSCapstone\\vendor\\symfony\\console\\Application.php(1094): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#29 C:\\Users\\User\\SDSCapstone\\vendor\\symfony\\console\\Application.php(342): Symfony\\Component\\Console\\Application->doRunCommand(Object(Illuminate\\Database\\Console\\Migrations\\MigrateCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#30 C:\\Users\\User\\SDSCapstone\\vendor\\symfony\\console\\Application.php(193): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#31 C:\\Users\\User\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(198): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#32 C:\\Users\\User\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1208): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#33 C:\\Users\\User\\SDSCapstone\\artisan(13): Illuminate\\Foundation\\Application->handleCommand(Object(Symfony\\Component\\Console\\Input\\ArgvInput))
+#34 {main}
+
+[previous exception] [object] (PDOException(code: 42S01): SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'diagnoses' already exists at C:\\Users\\User\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:571)
+[stacktrace]
+#0 C:\\Users\\User\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(571): PDOStatement->execute()
+#1 C:\\Users\\User\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(812): Illuminate\\Database\\Connection->{closure:Illuminate\\Database\\Connection::statement():560}('create table `d...', Array)
+#2 C:\\Users\\User\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(779): Illuminate\\Database\\Connection->runQueryCallback('create table `d...', Array, Object(Closure))
+#3 C:\\Users\\User\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(560): Illuminate\\Database\\Connection->run('create table `d...', Array, Object(Closure))
+#4 C:\\Users\\User\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Schema\\Blueprint.php(118): Illuminate\\Database\\Connection->statement('create table `d...')
+#5 C:\\Users\\User\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Schema\\Builder.php(564): Illuminate\\Database\\Schema\\Blueprint->build(Object(Illuminate\\Database\\MySqlConnection), Object(Illuminate\\Database\\Schema\\Grammars\\MySqlGrammar))
+#6 C:\\Users\\User\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Schema\\Builder.php(418): Illuminate\\Database\\Schema\\Builder->build(Object(Illuminate\\Database\\Schema\\Blueprint))
+#7 C:\\Users\\User\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Facades\\Facade.php(361): Illuminate\\Database\\Schema\\Builder->create('diagnoses', Object(Closure))
+#8 C:\\Users\\User\\SDSCapstone\\database\\migrations\\2025_02_04_144422_create_diagnoses_table.php(14): Illuminate\\Support\\Facades\\Facade::__callStatic('create', Array)
+#9 C:\\Users\\User\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(476): Illuminate\\Database\\Migrations\\Migration@anonymous->up()
+#10 C:\\Users\\User\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(401): Illuminate\\Database\\Migrations\\Migrator->runMethod(Object(Illuminate\\Database\\MySqlConnection), Object(Illuminate\\Database\\Migrations\\Migration@anonymous), 'up')
+#11 C:\\Users\\User\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(410): Illuminate\\Database\\Migrations\\Migrator->{closure:Illuminate\\Database\\Migrations\\Migrator::runMigration():397}()
+#12 C:\\Users\\User\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(213): Illuminate\\Database\\Migrations\\Migrator->runMigration(Object(Illuminate\\Database\\Migrations\\Migration@anonymous), 'up')
+#13 C:\\Users\\User\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\View\\Components\\Task.php(40): Illuminate\\Database\\Migrations\\Migrator->{closure:Illuminate\\Database\\Migrations\\Migrator::runUp():213}()
+#14 C:\\Users\\User\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(737): Illuminate\\Console\\View\\Components\\Task->render('2025_02_04_1444...', Object(Closure))
+#15 C:\\Users\\User\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(213): Illuminate\\Database\\Migrations\\Migrator->write('Illuminate\\\\Cons...', '2025_02_04_1444...', Object(Closure))
+#16 C:\\Users\\User\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(180): Illuminate\\Database\\Migrations\\Migrator->runUp('C:\\\\Users\\\\User\\\\S...', 1, false)
+#17 C:\\Users\\User\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(123): Illuminate\\Database\\Migrations\\Migrator->runPending(Array, Array)
+#18 C:\\Users\\User\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Console\\Migrations\\MigrateCommand.php(116): Illuminate\\Database\\Migrations\\Migrator->run(Array, Array)
+#19 C:\\Users\\User\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(616): Illuminate\\Database\\Console\\Migrations\\MigrateCommand->{closure:Illuminate\\Database\\Console\\Migrations\\MigrateCommand::runMigrations():109}()
+#20 C:\\Users\\User\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Console\\Migrations\\MigrateCommand.php(109): Illuminate\\Database\\Migrations\\Migrator->usingConnection(NULL, Object(Closure))
+#21 C:\\Users\\User\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Console\\Migrations\\MigrateCommand.php(88): Illuminate\\Database\\Console\\Migrations\\MigrateCommand->runMigrations()
+#22 C:\\Users\\User\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(36): Illuminate\\Database\\Console\\Migrations\\MigrateCommand->handle()
+#23 C:\\Users\\User\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(43): Illuminate\\Container\\BoundMethod::{closure:Illuminate\\Container\\BoundMethod::call():35}()
+#24 C:\\Users\\User\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(95): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#25 C:\\Users\\User\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(35): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#26 C:\\Users\\User\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(694): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#27 C:\\Users\\User\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(213): Illuminate\\Container\\Container->call(Array)
+#28 C:\\Users\\User\\SDSCapstone\\vendor\\symfony\\console\\Command\\Command.php(279): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#29 C:\\Users\\User\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(182): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#30 C:\\Users\\User\\SDSCapstone\\vendor\\symfony\\console\\Application.php(1094): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#31 C:\\Users\\User\\SDSCapstone\\vendor\\symfony\\console\\Application.php(342): Symfony\\Component\\Console\\Application->doRunCommand(Object(Illuminate\\Database\\Console\\Migrations\\MigrateCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#32 C:\\Users\\User\\SDSCapstone\\vendor\\symfony\\console\\Application.php(193): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#33 C:\\Users\\User\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(198): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#34 C:\\Users\\User\\SDSCapstone\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1208): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#35 C:\\Users\\User\\SDSCapstone\\artisan(13): Illuminate\\Foundation\\Application->handleCommand(Object(Symfony\\Component\\Console\\Input\\ArgvInput))
+#36 {main}
+"} 
+[2025-02-04 14:49:39] local.INFO: Sending symptoms to API {"symptoms":["cough","cold","fever"]} 
+[2025-02-04 14:49:39] local.INFO: Received response from API {"response":{"diagnoses":[{"disease":"Allergic Rhinitis","probability":0.38},{"disease":"Food Poisoning","probability":0.15},{"disease":"Common Cold","probability":0.15}]}} 
+[2025-02-04 14:51:21] local.INFO: Sending symptoms to API {"symptoms":["cough","cold","fever"]} 
+[2025-02-04 14:51:21] local.INFO: Received response from API {"response":{"diagnoses":[{"disease":"Allergic Rhinitis","probability":0.38},{"disease":"Food Poisoning","probability":0.15},{"disease":"Common Cold","probability":0.15}]}} 
+[2025-02-04 14:51:25] local.INFO: Sending symptoms to API {"symptoms":["cough","cold","fever"]} 
+[2025-02-04 14:51:25] local.INFO: Received response from API {"response":{"diagnoses":[{"disease":"Allergic Rhinitis","probability":0.38},{"disease":"Food Poisoning","probability":0.15},{"disease":"Common Cold","probability":0.15}]}} 
+[2025-02-04 14:52:50] local.INFO: Sending symptoms to API {"symptoms":["cough","cold","fatigue","sore throat"]} 
+[2025-02-04 14:52:50] local.INFO: Received response from API {"response":{"diagnoses":[{"disease":"Common Cold","probability":1.0},{"disease":"Asthma","probability":0.0},{"disease":"Sinusitis","probability":0.0}]}} 
+[2025-02-04 14:52:59] local.INFO: Sending symptoms to API {"symptoms":["cough","cold","fatigue"]} 
+[2025-02-04 14:52:59] local.INFO: Received response from API {"response":{"diagnoses":[{"disease":"Common Cold","probability":0.72},{"disease":"Asthma","probability":0.21},{"disease":"Migraine","probability":0.04}]}} 
+[2025-02-04 14:56:49] local.INFO: Sending symptoms to API {"symptoms":["cough","cold","fatigue"]} 
+[2025-02-04 14:56:49] local.INFO: Received response from API {"response":{"diagnoses":[{"disease":"Common Cold","probability":0.8035428769572139},{"disease":"Sinusitis","probability":0.08432747239899914},{"disease":"Allergic Rhinitis","probability":0.08011403567565013}]}} 
+[2025-02-04 14:58:15] local.INFO: Sending symptoms to API {"symptoms":["cough","cold","vomiting"]} 
+[2025-02-04 14:58:15] local.INFO: Received response from API {"response":{"diagnoses":[{"disease":"Common Cold","probability":0.2014575651992666},{"disease":"Food Poisoning","probability":0.18052986120080852},{"disease":"Migraine","probability":0.17687051433286402}]}} 
+[2025-02-04 14:58:54] local.INFO: Sending symptoms to API {"symptoms":["cough","cold","sore throat"]} 
+[2025-02-04 14:58:54] local.INFO: Received response from API {"response":{"diagnoses":[{"disease":"Allergic Rhinitis","probability":0.44742930327884445},{"disease":"Common Cold","probability":0.4257843345114863},{"disease":"Sinusitis","probability":0.06719640325921325}]}} 
+[2025-02-06 23:24:18] local.INFO: Sending symptoms to API {"symptoms":["cough","fever","fatigue"]} 
+[2025-02-06 23:24:19] local.INFO: Received response from API {"response":{"diagnoses":[{"disease":"Influenza (Flu)","probability":0.20626110490596047},{"disease":"Pneumonia","probability":0.14061052205613475},{"disease":"Tuberculosis (TB)","probability":0.12976304039918196}]}} 
+[2025-02-06 23:31:08] local.INFO: Sending symptoms to API {"symptoms":["fatigue","nausea","vomiting","diarrhea"]} 
+[2025-02-06 23:31:08] local.INFO: Received response from API {"response":{"diagnoses":[{"disease":"Gastroenteritis (Stomach Flu)","probability":0.7434687822277691},{"disease":"Migraine","probability":0.18900457328717057},{"disease":"Food Poisoning","probability":0.0628004324272348}]}} 
+[2025-02-06 23:45:01] local.INFO: Sending symptoms to API {"symptoms":["fever","vomiting","diarrhea"]} 
+[2025-02-06 23:45:02] local.INFO: Received response from API {"response":{"diagnoses":[{"disease":"Food Poisoning","probability":0.7705859650745002},{"disease":"Gastroenteritis (Stomach Flu)","probability":0.1333150750397875},{"disease":"Migraine","probability":0.058120521052601674}]}} 
